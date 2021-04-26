@@ -1,0 +1,11 @@
+- name: Articles 
+  link: /
+
+- name: Notes
+  link: /notes.html
+
+- name: Projects
+  link: /projects.html
+  
+- name: Contact
+  link: /contact.html

@@ -1,0 +1,59 @@
+html { --bg: #ffffff; --bg-secondary: #d0dce1; --headings: #07f; --text: #333; }
+
+html[data-theme='dark'] { --bg: #191919; --bg-secondary: #666666; --headings: #39f; --text: #e8edf0; }
+
+* { font-family: 'Inter', sans-serif; color: var(--text); }
+
+body { background-color: var(--bg); line-height: 1.4; text-rendering: optimizelegibility; }
+
+.container { background-color: var(--bg-secondary); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--headings); }
+
+p, strong, b, em, span, code, small { color: var(--text); }
+
+.posts a { font-size: 1.00em; font-weight: 600; color: var(--text); text-decoration: none; margin-top: 5.4px; margin-bottom: 5.4px; }
+
+.posts a:hover { color: var(--text); text-decoration: underline; }
+
+.theme-toggle { padding: 0%; margin-left: 125%; background-color: Transparent; border: none; }
+
+.theme-toggle i { color: var(--text); }
+
+img { width: 60px; height: 60px; }
+
+::selection { background: #c9ecff; }
+
+#content { font-size: 18px; max-width: 680px; }
+
+.aside-1 { max-width: 21rem; font-size: 80%; }
+
+#bio-info { font-size: 65%; line-height: 1.4; max-width: 21rem; }
+
+.page-layout { margin: 3em 1em; }
+
+.profile-name { font-size: 80%; font-variant: small-caps; font-variant-numeric: normal; font-weight: 700; margin: 0.5em 0em; }
+
+.list-inline-item a:hover { color: var(--text); text-decoration: underline; }
+
+ol, ul { padding-left: inherit; }
+
+.list-inline-item a { padding: 0px; font-size: 80%; color: var(--text); text-decoration: none; }
+
+.nav-item a { color: var(--text); }
+
+.nav-item a:hover { color: var(--text); }
+
+.nav a:hover { border-left: 1px solid var(--text); height: 30px; }
+
+.contact-button { color: var(--bg); background: var(--text); border: none; font-family: 'Inter', sans-serif; }
+
+.contact-list { list-style-type: none; }
+
+.contact-text-fields { background: var(--bg); color: var(--text); border-color: var(--text); border-block-width: 2px; }
+
+.above-text-fields { font-size: 80%; margin-top: 5%; color: var(--text); }
+
+html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 650ms !important; transition-delay: 0 !important; }
+
+/*# sourceMappingURL=styles.css.map */

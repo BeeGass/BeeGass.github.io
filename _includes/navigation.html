@@ -1,0 +1,9 @@
+<nav >
+    <li class="nav-item">
+        {% for item in site.data.navigation %}
+            <a class="fw-bold fs-5 nav-link link-dark" href="{{ item.link }}" {% if page.url == item.link %} {% endif %}>
+                {{ item.name }}
+            </a>
+        {% endfor %}
+    </li>
+  </nav>
