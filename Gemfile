@@ -6,6 +6,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 gem "jekyll"
-gem 'katex', '~> 0.8.0'
-gem 'jekyll-sitemap'
-gem 'jekyll-seo-tag'
+
+group :jekyll_plugins do
+    gem 'jekyll-sitemap'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-katex'
+    gem 'execjs'
+  end

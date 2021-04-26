@@ -3,7 +3,11 @@ reading_time:
   minute_singular: "min"  # default: minute
   minute_plural: "min"    # default: minutes
 
+kramdown:
+  math_engine: katex
+
 url: "https://beegass.github.io/" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-katex
