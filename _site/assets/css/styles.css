@@ -18,9 +18,11 @@ p, strong, b, em, span, code, small { color: var(--text); }
 
 .posts a:hover { color: var(--text); text-decoration: underline; }
 
-.theme-toggle { padding: 0%; margin-left: 125%; background-color: Transparent; border: none; }
+.theme-toggle { padding: 5%; margin-left: 125%; background-color: transparent; border: none; }
 
-.theme-toggle i { color: var(--text); }
+.theme-toggle i { color: #fff; }
+
+#icon { color: #fff; }
 
 img { width: 60px; height: 60px; }
 
