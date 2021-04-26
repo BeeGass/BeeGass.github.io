@@ -77,18 +77,18 @@ p, strong, b, em, span, code, small {
 }
 
 .theme-toggle {
-    padding: 5%;
+    padding: 0%;
     margin-left: 125%;
     background-color: transparent;
     border: none;
 }
 
 .theme-toggle i{
-    color: $white;
+    color: var(--text);
 }
 
 #icon {
-    color: $white;
+    color: var(--text);
 }
 
 img {
