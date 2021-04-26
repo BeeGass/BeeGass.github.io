@@ -42,6 +42,7 @@
             <div class="my-2 text-black-50">
                 <ul class="list-inline-item">
                     {% include social_content.html %}
+                    <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
                 </ul>
             </div>
             <ul class="nav flex-column">
@@ -50,7 +51,6 @@
         </div>
 
     <div class="flex-grow-1 lh-base px-3 py3" id="content"> 
-        <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
             <div class="flex-sm-row">
                 {{ content }}
             </div>
