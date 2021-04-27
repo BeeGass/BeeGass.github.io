@@ -31,13 +31,8 @@ html[data-theme='dark'] {
 
 .inline_toc {
     list-style-type:none;
-    font-size: 50%;
     color: var(--text);
     text-decoration: none;
-}
-
-.inline_toc #my_toc{
-    color: red;
 }
 
 *{
@@ -182,6 +177,7 @@ ol, ul {
 
 .contact-list {
     list-style-type:none;
+    margin-left: 0%;
 }
 
 .contact-text-fields {
