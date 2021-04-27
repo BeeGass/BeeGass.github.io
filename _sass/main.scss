@@ -29,7 +29,12 @@ html[data-theme='dark'] {
     --text: #e8edf0;
 }
 
-
+.inline_toc {
+    list-style-type:none;
+    font-size: 50%;
+    color: var(--text);
+    text-decoration: none;
+}
 
 *{
     font-family: 'Inter',sans-serif;
