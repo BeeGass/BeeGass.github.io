@@ -1,6 +1,6 @@
 {% for post in site.posts %}
     <li >
-        <div href="{{ post.url }}">{{ post.date | date_to_string }} - {{ content | reading_time }} read</div>
+        <div href="{{ post.url }}">{{ post.date | date_to_string }} - {% include read-time.html content=post.content %}</div>
         <h2 class="posts"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
     </li>
