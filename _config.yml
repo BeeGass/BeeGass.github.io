@@ -1,10 +1,12 @@
+baseurl: /
+
+kramdown:
+  math_engine: katex
+
 reading_time:
   second_plural: "sec"    # default: seconds
   minute_singular: "min"  # default: minute
   minute_plural: "min"    # default: minutes
-
-kramdown:
-  math_engine: katex
 
 url: "https://beegass.github.io/" # the base hostname & protocol for your site
 plugins:
