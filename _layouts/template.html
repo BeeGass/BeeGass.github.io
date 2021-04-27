@@ -5,9 +5,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-    {% include head.html %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        $(function(){ $("head").load("head.html") });
+    </script>
     <title>{{ page.title }}</title>
 </head>
 <body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
