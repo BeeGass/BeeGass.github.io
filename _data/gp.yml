@@ -1,23 +1,23 @@
-- name: CS-541-Deep-Learning
+- name: "CS-541-Deep-Learning"
   description: CS-541 Deep Learning is a graduate class that teaches both a theoretical and practical approach to deep learning. You will be able to see this in the different homework files in the form of workable code that can be tested as well as proofs and explanations as to where the code is coming from.  
   link: https://github.com/BeeGass/CS-541-Deep-Learning
 
-- name: Deep-Q-Learning
+- name: "Deep-Q-Learning"
   description: This is my attempt at implementing the paper "Playing Atari with Deep Reinforcement Learning" By Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra and Martin Riedmiller. This is my first attempt at both reading and implementing a research paper.
   link: https://github.com/BeeGass/Deep-Q-Learning
 
-- name: CS-4445-Data-Mining
+- name: "CS-4445-Data-Mining"
   description: This is a collection of all my projects completed in my Data Mining class where I recreated the events shown in the movie Money Ball to making the ground work for a dating app like "Hot Or Not"
   link: https://github.com/BeeGass/CS-4445-Data-Mining
 
-- name: AI Project 2
+- name: "AI Project 2"
   description: In the class CS-4341, Artificial Intelligence, we were tasked to build an agent that could play the game of Gomoku. In order to achieve this the team implemented the MiniMax algorithm, Alpha-beta-pruning as well as our own understanding of evualtion function to facilitate the previous two algorithms.
   link: https://github.com/BeeGass/AI_Project2
 
-- name: Self Taught Machine Learning
+- name: "Self Taught Machine Learning"
   description: I have had trouble in the past finding a place where I could learn about statistical learning algorithms, resources as to how to learn them and the code associated with it. This is my attempt at remedying that issue.
   link: https://github.com/BeeGass/Self-Taught-Machine-Learning
 
-- name: General Search
+- name: "General Search"
   description: This is a general search algorithm that contains in a single algorithm a modular approach to running everything from depth first search to A* and Hill Climbing
   link: https://github.com/BeeGass/General-Search
