@@ -2,4 +2,8 @@
 title: Projects | Bryan Gass
 layout: project_template
 ---
-{% include cards.html reponame="{{ repo.title }}" %}
+{% for item in site.data.gp %}
+    <li>
+        {% include cards.html reponame="{{ item.title }}" %}
+    </li>
+{% endfor %}
