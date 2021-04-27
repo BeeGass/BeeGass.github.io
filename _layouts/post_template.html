@@ -13,7 +13,7 @@
 <body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
     <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
         <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">  <!--could not get the right padding exactly 2rem using bootstrap's css-->
-            {% include toc.html html=content sanitize=true class="inline_toc"}
+            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=6 %}
         </div>
 
     <div class="flex-grow-1 lh-base px-3 py3" id="content"> 
