@@ -2,4 +2,8 @@
 title: Projects | Bryan Gass
 layout: project_template
 ---
-{% include cards.html reponame="CS-541-Deep-Learning" %}
+{% for repo in site.data.github_projects.repositories %}
+    <li>
+        {% include cards.html reponame="{{ repo.title }}" %}
+    </li>
+{% endfor %}
