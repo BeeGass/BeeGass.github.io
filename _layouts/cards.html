@@ -1,0 +1,10 @@
+
+{% for repo in site.data.github_projects.repositories %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ repo.title }}</h5>
+            <p class="card-text">{{ repo.description }}</p>
+            <a href="{{ repo.link }}" class="card-link">The Repo</a>
+        </div>
+    </div>
+{% endfor %}
