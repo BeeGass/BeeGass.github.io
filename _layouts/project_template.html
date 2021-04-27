@@ -1,0 +1,42 @@
+---
+ title: Home | Bryan Gass
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
+    <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
+        <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">  <!--could not get the right padding exactly 2rem using bootstrap's css-->
+            <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
+            <img src= \me.jpg class="rounded rounded-border-radius-4" alt="...">
+            <div class="fw-bolder my-1 profile-name">
+                Bryan Gass
+            </div>
+            <div class="flex-column flex-lg-row" id="bio-info">
+                Computer Science student at Worcester Polytechnic Institute. Interested in machine learning, mathematics, cafe racers, finding the tastiest ramen.
+            </div>
+            <div class="my-2 text-black-50">
+                <ul class="list-inline-item">
+                    {% include social_content.html %}
+                </ul>
+            </div>
+            <ul class="nav flex-column">
+                {% include navigation.html %}
+            </ul>
+        </div>
+
+    <div class="flex-grow-1 lh-base px-3 py3" id="content"> 
+            <div class="flex-sm-row">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</body>
+{% include k_tex.html %}
+</html>

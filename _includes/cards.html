@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/assets/css/github-repo-card.css">
 {% assign repository = site.github.public_repositories 
         | where: "name", include.reponame 
         | first %}
@@ -13,12 +12,12 @@
         </div>
         <div class="github-repo-text">{{ repository.description }}</div>
         <div class="stats-icons">
-            {% if repository.stargazers_count %}
+            {% if repository.stargazers_count >= 1 %}
                 <a href="{{ repository.html_url }}/stargazers" >
                     <i class="fas fa-star gh-icon"></i>{{ repository.stargazers_count }}
                 </a>
             {% endif %}
-            {% if repository.forks_count %}
+            {% if repository.forks_count >= 1 %}
                 <a href="{{ repository.html_url }}/network/members" >
                     <i class="fas fa-code-branch gh-icon"></i>{{ repository.forks_count }}
                 </a>
