@@ -194,11 +194,9 @@ ol, ul {
     bottom: 5px;
     color: var(--bg-secondary);
 }
-.repo-list {
+.repos-list {
     list-style-type:none;
     display: inline-block;
-    zoom:1;
-    *display:inline;
 }
 
 .github-repo-card {
@@ -266,7 +264,6 @@ ol, ul {
 
 .github-repo-card .stats-icons {
     font-size: 12px !important;
-    color: #dd0e0e
 }
 
 .github-repo-card .stats-icons a {
@@ -277,7 +274,6 @@ ol, ul {
 
 .github-repo-card .gh-icon {
     margin-right: 4px !important;
-    color: #dd0e0e
 }
 
 html.transition,
