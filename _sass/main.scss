@@ -19,7 +19,7 @@ html {
     --bg: #ffffff;
     --bg-secondary: #d0dce1;
     --headings: #0645AD;
-    --text: #333;
+    --text: #23272A;
 }
 
 html[data-theme='dark'] {
@@ -274,6 +274,11 @@ ol, ul {
     margin-right: 24px !important;
     color: var(--bg) !important;
 }
+
+.github-repo-card .stats-icons a i{
+    color: var(--bg)
+}
+
 
 .github-repo-card .gh-icon {
     margin-right: 4px !important;
