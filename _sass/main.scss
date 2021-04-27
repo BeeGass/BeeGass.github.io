@@ -31,6 +31,9 @@ html[data-theme='dark'] {
 
 .inline_toc {
     list-style-type:none;
+}
+
+.inline_toc a{
     color: var(--text);
     text-decoration: none;
 }
