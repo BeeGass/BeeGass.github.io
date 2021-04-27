@@ -34,7 +34,7 @@
         <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">  <!--could not get the right padding exactly 2rem using bootstrap's css-->
             {% for item in site.data.navigation %}
                 {% if item.name == "Articles" %}
-                    <button class="back-button"><i href="{{ item.link }}" class="fas fa-arrow-left"></i></button>
+                    <button href="{{ item.link }}" class="back-button"><i href="{{ item.link }}" class="fas fa-arrow-left"></i></button>
                 {% endif %}
             {% endfor %}
             <ul class="contact-list">
