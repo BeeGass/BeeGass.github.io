@@ -1,11 +1,11 @@
 - name: Articles
-  link: "{{ site.baseurl }}"
+  link: /
 
 - name: Notes
-  link: "{{ site.baseurl }}/notes.html"
+  link: /notes.html
 
 - name: Projects
-  link: "{{ site.baseurl }}/projects.html"
+  link: /projects.html
   
 - name: Contact
-  link: "{{ site.baseurl }}/contact.html"
+  link: /contact.html
