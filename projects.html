@@ -2,4 +2,6 @@
 title: Projects | Bryan Gass
 layout: template
 ---
-{% include cards.html %}
+{% for repo in site.data.github_projects.repositories %}
+    {% include cards.html reponame="{{ repo.title }}" %}
+{% endfor %}
