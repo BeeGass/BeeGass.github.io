@@ -1,4 +1,6 @@
 markdown: kramdown
+kramdown:
+  math_engine: katex
 
 reading_time:
   second_plural: "sec"    # default: seconds
