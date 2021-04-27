@@ -14,7 +14,7 @@
     <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
         <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">  <!--could not get the right padding exactly 2rem using bootstrap's css-->
             <ul class="contact-list">
-                {% include toc.html html=content class="inline_toc"}
+                {% include toc.html html=content sanitize=true class="inline_toc"}
             </ul>
         </div>
 
