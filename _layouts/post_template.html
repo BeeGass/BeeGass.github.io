@@ -40,11 +40,7 @@
     <div class="flex-grow-1 lh-base px-3 py3" id="content"> 
         <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
             <div class="flex-sm-row">
-                {% for item in site.data.navigation %}
-                    {% if item.name == "Articles" %}
-                        <button href="{{ item.link }}" class="back-button"><i href="{{ item.link }}" class="fas fa-arrow-left"></i></button>
-                    {% endif %}
-                {% endfor %}
+                <button href="https://beegass.github.io/" class="back-button"><i href="https://beegass.github.io/" class="fas fa-arrow-left"></i></button>
                 {{ content }}
             </div>
         </div>
