@@ -1,8 +1,8 @@
 - name: Articles
   link: /
 
-- name: Notes
-  link: /notes.html
+- name: Notes/Videos
+  link: /notes-videos.html
 
 - name: Projects
   link: /projects.html
