@@ -18,14 +18,14 @@ $white-900: #f2f2f3;
 html {
     --bg: #ffffff;
     --bg-secondary: #d0dce1;
-    --headings: #07f;
+    --headings: #0645AD;
     --text: #333;
 }
 
 html[data-theme='dark'] {
     --bg: #191919;
     --bg-secondary: #666666;
-    --headings: #39f;
+    --headings: #0645AD;
     --text: #e8edf0;
 }
 
@@ -118,7 +118,7 @@ img {
 }
 
 #bio-info {
-    font-size : 65%;
+    font-size : 70%;
     line-height : 1.4;
     max-width : 21rem;
 }
@@ -199,6 +199,7 @@ ol, ul {
     display: inline-block;
 }
 
+
 .github-repo-card {
 
     font-family: Segoe UI,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol;
@@ -251,6 +252,7 @@ ol, ul {
 
 .github-repo-card h1 span {
     font-weight: 400 !important;
+    color: var(--headings);
 }
 
 .github-repo-card .github-repo-text {
