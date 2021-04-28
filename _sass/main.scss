@@ -30,20 +30,16 @@ html[data-theme='dark'] {
 }
 
 .the_toc {
-    font-size: 80%;
     color: var(--text);
-    text-decoration: none;
 }
 
 .the_toc ul{
     text-decoration: none;
     list-style-type:none;
-    color: var(--text);
 }
 
 .the_toc a{
     text-decoration: none;
-    color: var(--text);
 }
 
 * {
