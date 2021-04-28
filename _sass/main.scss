@@ -29,16 +29,17 @@ html[data-theme='dark'] {
     --text: #e8edf0;
 }
 
-.the_toc ul{
+.the_toc {
     font-size: 80%;
     color: var(--text);
+}
+
+.the_toc ul{
     text-decoration: none;
     list-style-type:none;
 }
 
 .the_toc a{
-    font-size: 80%;
-    color: var(--text);
     text-decoration: none;
 }
 
