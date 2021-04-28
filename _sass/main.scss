@@ -30,8 +30,15 @@ html[data-theme='dark'] {
 }
 
 .the_toc {
-    font-size: 60%;
+    font-size: 50%;
     color: var(--text);
+}
+
+.the_toc li{
+    list-style-type: none;
+}
+
+.the_toc a{
     text-decoration: none;
 }
 
