@@ -29,20 +29,21 @@ html[data-theme='dark'] {
     --text: #e8edf0;
 }
 
-.inline_toc a{
+.the_toc a {
     font-size: 60%;
     color: var(--text);
     text-decoration: none;
     list-style-type:none;
 }
 
-*{
-    font-family: 'Inter',sans-serif;
+* {
+    font-family: 'Inter', sans-serif;
     color: var(--text);
 }
+
 body {
     background-color: var(--bg);
-    line-height : 1.4;
+    line-height: 1.4;
     text-rendering: optimizelegibility;
 }
 
@@ -50,35 +51,46 @@ body {
     background-color: var(--bg-secondary);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text);
 }
 
-p, strong, b, em, span, code, small {
+p,
+strong,
+b,
+em,
+span,
+code,
+small {
     color: var(--text);
 }
 
-.posts a{
-    font-size : 1.00em;
-    font-weight : 600;
+.posts a {
+    font-size: 1.00em;
+    font-weight: 600;
     color: var(--text);
-    text-decoration:none;
-    margin-top : 5.4px;
-    margin-bottom : 5.4px;
+    text-decoration: none;
+    margin-top: 5.4px;
+    margin-bottom: 5.4px;
 }
 
 .blog-title {
-    font-size : 1.85em;
-    font-weight : 600;
+    font-size: 1.85em;
+    font-weight: 600;
     color: var(--text);
-    text-decoration:none;
-    margin-top : 5.4px;
-    margin-bottom : 5.4px;
+    text-decoration: none;
+    margin-top: 5.4px;
+    margin-bottom: 5.4px;
 }
 
-.posts a:hover{
+.posts a:hover {
     color: var(--text);
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .theme-toggle {
@@ -88,17 +100,17 @@ p, strong, b, em, span, code, small {
     border: none;
 }
 
-.theme-toggle i{
+.theme-toggle i {
     color: var(--text);
 }
 
 .back-button {
     padding: 0%;
     margin-right: 100%;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.back-button i{
+.back-button i {
     color: var(--text);
 }
 
@@ -107,64 +119,68 @@ p, strong, b, em, span, code, small {
 }
 
 img {
-    width : 60px;
-    height : 60px;
+    width: 60px;
+    height: 60px;
 }
+
 ::selection {
     background: rgb(201, 236, 255);
 }
+
 #content {
-    font-size : 18px;
+    font-size: 18px;
     max-width: 680px;
 }
+
 .aside-1 {
-    max-width : 21rem;
-    font-size : 80%;
+    max-width: 21rem;
+    font-size: 80%;
 }
 
 #bio-info {
-    font-size : 70%;
-    line-height : 1.4;
-    max-width : 21rem;
+    font-size: 70%;
+    line-height: 1.4;
+    max-width: 21rem;
 }
 
 .page-layout {
-     margin : 3em 1em;
+    margin: 3em 1em;
 }
 
 .profile-name {
-    font-size : 80%;
-    font-variant : small-caps;
-    font-variant-numeric : normal;
+    font-size: 80%;
+    font-variant: small-caps;
+    font-variant-numeric: normal;
     font-weight: 700;
     margin: 0.5em 0em;
 }
 
-.list-inline-item a:hover{
+.list-inline-item a:hover {
     color: var(--text);
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: inherit;
 }
 
-.list-inline-item a{
+.list-inline-item a {
     padding: 0px;
-    font-size : 70%;
+    font-size: 70%;
     color: var(--bg-secondary);
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.nav-item a{
+.nav-item a {
     color: var(--text);
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: var(--text);
 }
 
-.nav a:hover{
+.nav a:hover {
     border-left: 1px solid var(--text);
     height: 30px;
 }
@@ -177,7 +193,7 @@ ol, ul {
 }
 
 .contact-list {
-    list-style-type:none;
+    list-style-type: none;
     margin-left: 0%;
 }
 
@@ -196,19 +212,20 @@ ol, ul {
 
 .copy-right {
     font-size: 30%;
-    position: absolute; 
+    position: absolute;
     bottom: 5px;
     color: var(--bg-secondary);
 }
+
 .repos-list {
-    list-style-type:none;
+    list-style-type: none;
     display: inline-block;
 }
 
 
 .github-repo-card {
 
-    font-family: Segoe UI,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol;
+    font-family: Segoe UI, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
     width: 90%;
     height: 80% !important;
     text-align: left !important;
@@ -219,22 +236,22 @@ ol, ul {
 }
 
 @media screen and (max-width: 1200px) {
-    .github-repo-card { 
+    .github-repo-card {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .github-repo-card { 
+    .github-repo-card {
         width: 80%;
     }
 }
 
-.github-repo-card img { 
+.github-repo-card img {
     height: 0;
 }
 
-.github-repo-card a { 
+.github-repo-card a {
     text-decoration: none;
 }
 
@@ -272,7 +289,7 @@ ol, ul {
 
 .github-repo-card .stats-icons {
     font-size: 12px !important;
-    color: var(--bg) 
+    color: var(--bg)
 }
 
 .github-repo-card .stats-icons a {
@@ -281,7 +298,7 @@ ol, ul {
     color: var(--bg) !important;
 }
 
-.stats-icons a i{
+.stats-icons a i {
     color: var(--bg)
 }
 
