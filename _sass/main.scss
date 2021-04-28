@@ -29,14 +29,14 @@ html[data-theme='dark'] {
     --text: #e8edf0;
 }
 
-.the_toc ul{
-    list-style-type:none;
+.the_toc {
+    text-decoration: none;
 }
 
-.the_toc a{
-    font-size: 80%;
+.the_toc {
+    font-size: 60%;
     color: var(--text);
-    text-decoration: none;
+    list-style-type:none;
 }
 
 * {
