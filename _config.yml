@@ -4,6 +4,8 @@ kramdown:
    # we're also usint the auto-render katex extension because of it
    math_engine: mathjax
 
+highlighter: rouge
+
 reading_time:
   second_plural: "sec"    # default: seconds
   minute_singular: "min"  # default: minute
