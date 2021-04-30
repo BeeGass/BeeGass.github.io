@@ -152,6 +152,7 @@ img {
     font-size: 70%;
     line-height: 1.4;
     max-width: 21rem;
+    color: var(--text);
 }
 
 .page-layout {
@@ -164,6 +165,7 @@ img {
     font-variant-numeric: normal;
     font-weight: 700;
     margin: 0.5em 0em;
+    color: var(--text);
 }
 
 .list-inline-item a:hover {
