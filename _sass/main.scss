@@ -45,6 +45,8 @@ html[data-theme='dark'] {
 .the_toc a{
     color: var(--text);
     text-decoration: none;
+    position: sticky;
+    top: 2em;
 }
 
 * {
