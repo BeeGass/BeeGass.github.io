@@ -34,6 +34,7 @@ html[data-theme='dark'] {
     color: var(--text);
     list-style-type: none;
     text-decoration: none;
+    position: sticky;
 }
 
 .the_toc li{
@@ -48,6 +49,7 @@ html[data-theme='dark'] {
 .the_toc a{
     color: var(--text);
     text-decoration: none;
+    position: sticky;
 }
 
 * {
