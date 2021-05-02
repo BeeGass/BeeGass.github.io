@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Use Allejo's Jekyll-TOC Using CSS
+title: How To Style/Implement Allejo's Jekyll-TOC Using CSS
 author: Bryan
 categories: webdev 
 ---
