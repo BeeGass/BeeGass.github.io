@@ -23,7 +23,7 @@ There are a couple of components to understand when styling your table of conten
 * `<li></li>` In your css call the `li` tag when wanting to apply CSS to specific list items
 * `<a></a>` In you css call the `a` tag when wanting to apply CSS to specific text corresponding to the linked item. 
 
-## Example
+#### Example
 For reference this is how my CSS looks to achieve the table of contents as of 5/2/2021
 
 {% highlight html linenos %}
