@@ -19,9 +19,9 @@ the class and id variables can be tailored to whatever you want to call them. Fr
 
 ## Styling The Table Of Contents
 There are a couple of components to understand when styling your table of contents. 
-* `<ul></ul>` In your css call the `ul` tag when wanting to apply CSS to the entire unordered list
-* `<li></li>` In your css call the `li` tag when wanting to apply CSS to specific list items
-* `<a></a>` In you css call the `a` tag when wanting to apply CSS to specific text corresponding to the linked item. 
+* `<ul></ul>`, In your css call the `ul` tag when wanting to apply CSS to the entire unordered list
+* `<li></li>`, In your css call the `li` tag when wanting to apply CSS to specific list items
+* `<a></a>`, In you css call the `a` tag when wanting to apply CSS to specific text corresponding to the linked item. 
 
 #### Example
 For reference this is how my CSS looks to achieve the table of contents as of 5/2/2021
