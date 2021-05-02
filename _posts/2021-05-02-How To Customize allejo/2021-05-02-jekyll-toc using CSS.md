@@ -6,7 +6,7 @@ categories: webdev
 ---
 I support this website using a combination of jekyll and github pages. Unfortunately, github restricts a immense ammount of plugins so a lot of work arounds have to be found in order to make seamingly simple tasks work. This has lead to my use of [allejo's excellent table of contents snippet](https://github.com/allejo/jekyll-toc). However, I find the documentation isnt exactly intuitive and for someone who isnt used to the world of webdev can be come confusing. My hope is to show you how to implement allejo's toc and how to apply CSS to it. 
 
-## Implementing The T.O.C.
+## Implementing The Table Of Contents
 If you want a simple working table of contents, simply put `{% raw %}{% include toc.html html=content %}{% endraw %}` in the same HTML layout where you have  your `{% raw %}{{ content }}{% endraw %}`. However, if you want to customize your table of contents you need to add a few more parameters to the above liquid function call. This is shown within the `toc.html` file where they show an example of what you need.
 
 {% highlight md linenos %}
