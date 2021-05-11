@@ -5,7 +5,7 @@ author: Bryan
 hasmath: "true"
 ---
 
-# Lecture 1:
+# Lecture 1: Intro and general overview of linear regression
 
 Feed-forward networks consisting of multiple layers of neurons, each of which feeds to the next layer 
 
@@ -13,12 +13,14 @@ Feed-forward networks consisting of multiple layers of neurons, each of which fe
 
 2-layer Neural Network
 
+Let dataset $D =  {(x^{(i)}, y^{(i)})}^{n}_{i=1}$
+
 **x** relates to the to the matrix that contains $x_1$, ..., $x_m$
 
 The output layer $\hat{y}$ computes the sum of the inputs multiplied by weights
 
 $$
-\hat{y} = g(w; w) = \sum^{m}_{i=1} x_{i} w_{i} = x^{T} w
+\hat{y} = g(x; w) = \sum^{m}_{i=1} x_{i} w_{i} = x^{T} w
 $$
 
 ## What is "deep"?
@@ -36,7 +38,7 @@ $$
 define the machine by a function *g* (with parameters w) whose output $\hat{y}$ is linear in its inputs:
 
 $$
-\hat{y} = g(w; w) = \sum^{m}_{i=1} x_{i} w_{i} = x^{T} w
+\hat{y} = g(x; w) = \sum^{m}_{i=1} x_{i} w_{i} = x^{T} w
 $$
 this is equivalent to a 2-layer neural network (with no activation function):
 
