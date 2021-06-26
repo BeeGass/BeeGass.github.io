@@ -4,10 +4,10 @@ title: How To Style/Implement Allejo's Jekyll-TOC Using CSS
 author: Bryan
 categories: webdev 
 ---
-I support this website using a combination of jekyll and github pages. Unfortunately, github restricts a immense ammount of plugins so a lot of work arounds have to be found in order to make seamingly simple tasks work. This has lead to my use of [allejo's excellent table of contents snippet](https://github.com/allejo/jekyll-toc). However, I find the documentation isnt exactly intuitive and for someone who isnt used to the world of webdev can be come confusing. My hope is to show you how to implement allejo's toc and how to apply CSS to it. 
+I support this website using a combination of jekyll and github pages. Unfortunately, github restricts an immense amount of plugins so a lot of work arounds have to be found, looked into and implemented in order to make seemingly simple task work. This has lead to my use of [allejo's excellent table of contents snippet](https://github.com/allejo/jekyll-toc). However, I find the documentation isn't exactly intuitive and for someone who isn't used to the world of web development a snippet like this can become confusing. My hope is to show you how to implement allejo's table of contents (TOC) and how to apply CSS to it.
 
 ## Implementing The Table Of Contents
-If you want a simple working table of contents, simply put `{% raw %}{% include toc.html html=content %}{% endraw %}` in the same HTML layout where you have  your `{% raw %}{{ content }}{% endraw %}`. However, if you want to customize your table of contents you need to add a few more parameters to the above liquid function call. This is shown within the `toc.html` file where they show an example of what you need.
+If you want a simple working table of contents, simply put `{% raw %}{% include toc.html html=content %}{% endraw %}` in the same HTML layout where you have your `{% raw %}{{ content }}{% endraw %}`. However, if you want to customize your table of contents you need to add a few more parameters to the above liquid function call. This is shown within the `toc.html` file where they show an example of what you need.
 
 {% highlight md linenos %}
     {% raw %}
@@ -15,13 +15,13 @@ If you want a simple working table of contents, simply put `{% raw %}{% include 
     {% endraw %} 
 {% endhighlight %}
 
-the class and id variables can be tailored to whatever you want to call them. From here we can begin styling our table of contents. 
+the class and id variables can be tailored to whatever you want to call them, just to be explicit here is an example, i.e. `class = banana` and `id = wolfman`. From here we can begin styling our table of contents. 
 
 ## Styling The Table Of Contents
 There are a couple of components to understand when styling your table of contents. 
-* `<ul></ul>`, In your css call the `ul` tag when wanting to apply CSS to the entire unordered list
-* `<li></li>`, In your css call the `li` tag when wanting to apply CSS to specific list items
-* `<a></a>`, In you css call the `a` tag when wanting to apply CSS to specific text corresponding to the linked item. 
+* `<ul></ul>`, In your css call the `ul` tag when you want to apply CSS to the entire unordered list
+* `<li></li>`, In your css call the `li` tag when you want to apply CSS to specific list items
+* `<a></a>`, In you css call the `a` tag when you want to apply CSS to specific text corresponding to the linked item.
 
 #### Example Code
 For reference this is how my CSS looks to achieve the table of contents as of 5/2/2021
@@ -52,4 +52,4 @@ For reference this is how my CSS looks to achieve the table of contents as of 5/
 I hope this helps.
 
 ## Comments Section
-If it doesnt help, I was overly vague, or you need assistance please do not shy away from commenting below.
+If this didn't help, I was overly vague, or you need assistance please do not shy away from commenting below.
