@@ -7,7 +7,7 @@ layout: project_template
         {% for repo in site.data.gp %}
         {% assign my_string = "{{ repo.name }}" %}
             <li>
-                {% include cards.html reponame=my_string %}
+                {% include cards.html reponame={{ my_string }} %}
             </li>
         {% endfor %}
     </ul>
