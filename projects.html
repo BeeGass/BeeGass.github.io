@@ -6,7 +6,7 @@ custom_css: styles
 <ul class="contact-list">
     {% for repo in site.data.gp %}
         <li>
-            {% include cards.html reponame={{ repo }} %}
+            <h1>{{ repo.name }}</h1>
         </li>
     {% endfor %}
 </ul>
