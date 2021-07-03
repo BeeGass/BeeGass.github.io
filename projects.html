@@ -1,13 +1,14 @@
 ---
 title: Projects | Bryan Gass
 layout: project_template
-custom_css: styles
 ---
 <ul class="contact-list">
-    {% for repo in site.data.gp %}
-    {% assign my_string = "{{ repo.name }}" %}
-        <li>
-            {% include cards.html reponame=my_string %}
-        </li>
-    {% endfor %}
+    <ul class="repo-list">
+        {% for repo in site.data.gp %}
+        {% assign my_string = "{{ repo.name }}" %}
+            <li>
+                {% include cards.html reponame=my_string %}
+            </li>
+        {% endfor %}
+    </ul>
 </ul>
