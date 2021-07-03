@@ -5,8 +5,8 @@ custom_css: styles
 ---
 <ul class="contact-list">
     <ul class="repo-list">
-        {% for repo in site.data.gp %}
-        {% assign my_string = {{ repo.name }} %}
+        {% for item in site.data.gp %}
+        {% assign my_string = "{{ item.name }}" %}
             <li>
                 <h1>{{ my_string }}</h1>
             </li>
