@@ -28,6 +28,7 @@
 <!-- MY CSS -->
 <!-- --------------------------------------------------------------------------------- -->
 {% if page.custom_css %}
+    <link rel="stylesheet" href="/assets/css/styles.css">
     {% for stylesheet in page.custom_css %}
         {% if stylesheet == "styles" %}
             <link rel="stylesheet" href="/assets/css/styles.css">
@@ -35,6 +36,8 @@
             <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
         {% endif %}
     {% endfor %}
+{% else %}
+    <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}">
 {% endif %}
 <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
 
