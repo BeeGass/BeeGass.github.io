@@ -1,4 +1,6 @@
-{% assign repository = site.github.public_repositories %}
+{% assign repository = site.github.public_repositories 
+        | where: "name" 
+        | first %}
     <div class="github-repo-card ">
         <div class="d-flex">
             <h1 >
