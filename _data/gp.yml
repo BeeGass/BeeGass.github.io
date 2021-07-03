@@ -22,10 +22,10 @@
   description: In the class CS-4341, Artificial Intelligence, we were tasked to build an agent that could play the game of Gomoku. In order to achieve this the team implemented the MiniMax algorithm, Alpha-beta-pruning as well as our own understanding of evualtion function to facilitate the previous two algorithms.
   link: https://github.com/BeeGass/AI_Project2
 
-- name: "General-Search"
-  description: This is a general search algorithm that contains in a single algorithm a modular approach to running everything from depth first search to A* and Hill Climbing
-  link: https://github.com/BeeGass/General-Search
-
 - name: "CS-543-Computer-Graphics"
   description: This course examines typical graphics systems, both hardware and software; design of low-level software support for raster displays; 3-D surface and solids modeling; hidden line and hidden surface algorithms; and realistic image rendering including shading, shadowing, reflection, refraction and surface texturing.
   link: https://github.com/BeeGass/CS-543-Computer-Graphics
+
+- name: "General-Search"
+  description: This is a general search algorithm that contains in a single algorithm a modular approach to running everything from depth first search to A* and Hill Climbing
+  link: https://github.com/BeeGass/General-Search
