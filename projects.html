@@ -5,9 +5,9 @@ custom_css: styles
 ---
 <ul class="contact-list">
     <ul class="repo-list">
-        {% for item in site.data.gp %}
+        {% for item in site.data.gp.name %}
             <li>
-                {% include cards.html reponame={% include item.name %} %}
+                {% include cards.html reponame=item %}
             </li>
         {% endfor %}
     </ul>
