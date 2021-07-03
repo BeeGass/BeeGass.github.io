@@ -5,6 +5,6 @@ custom_css: styles
 ---
 {% for item in site.data.gp %}
     <ul class="contact-list">
-        {% include cards.html reponame={{ gp.name }} %}
+        {% include cards.html reponame={{ item.name }} %}
     </ul>
 {% endfor %}
