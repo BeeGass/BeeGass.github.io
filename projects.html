@@ -7,7 +7,7 @@ custom_css: styles
     <ul class="repo-list">
         {% for item in site.data.gp %}
             <li>
-                <h1>{{ item.name }}</h1>
+                {% include cards.html reponame= {{ item.name }} %}
             </li>
         {% endfor %}
     </ul>
