@@ -1,12 +1,30 @@
 ---
 title: Projects | Bryan Gass
 layout: project_template
-custom_css: styles
 ---
-<ul class="contact-list"></ul>
-    {% for item in site.data.gp %}
+<ul class="contact-list">
+    <ul class="repo-list">
         <li>
-            {% include cards.html reponame={{ item.name }} %}
+            {% include cards.html %}
         </li>
-    {% endfor %}
+        <li>
+            {% include cards.html %}
+        </li>
+    </ul>
+    <ul class="repos-list">
+        <li>
+            {% include cards.html %}
+        </li>
+        <li>
+            {% include cards.html %}
+        </li>
+    </ul>
+    <ul class="repos-list">
+        <li>
+            {% include cards.html %}
+        </li>
+        <li>
+            {% include cards.html %}
+        </li>
+    </ul>
 </ul>
