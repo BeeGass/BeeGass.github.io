@@ -6,21 +6,21 @@
   description: This is my attempt at implementing the paper "Playing Atari with Deep Reinforcement Learning" By Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra and Martin Riedmiller. This is my first attempt at both reading and implementing a research paper.
   link: https://github.com/BeeGass/Deep-Q-Learning
 
-- name: "CS231n-Convolutional-Neural-Networks-for-Visual-Recognition"
-  description: Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka “deep learning”) approaches have greatly advanced the performance of these state-of-the-art visual recognition systems. This course is a deep dive into the details of deep learning architectures with a focus on learning end-to-end models for these tasks, particularly image classification. During the 10-week course, students will learn to implement and train their own neural networks and gain a detailed understanding of cutting-edge research in computer vision. Additionally, the final assignment will give them the opportunity to train and apply multi-million parameter networks on real-world vision problems of their choice. Through multiple hands-on assignments and the final course project, students will acquire the toolset for setting up deep learning tasks and practical engineering tricks for training and fine-tuning deep neural networks.
-  link: https://github.com/BeeGass/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition
+- name: "Self-Taught-Machine-Learning"
+  description: I have had trouble in the past finding a place where I could learn about statistical learning algorithms, resources as to how to learn them and the code associated with it. This is my attempt at remedying that issue.
+  link: https://github.com/BeeGass/Self-Taught-Machine-Learning
 
 - name: "CS-4445-Data-Mining"
   description: This is a collection of all my projects completed in my Data Mining class where I recreated the events shown in the movie Money Ball to making the ground work for a dating app like "Hot Or Not"
   link: https://github.com/BeeGass/CS-4445-Data-Mining
 
+- name: "CS231n-Convolutional-Neural-Networks-for-Visual-Recognition"
+  description: Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka “deep learning”) approaches have greatly advanced the performance of these state-of-the-art visual recognition systems. This course is a deep dive into the details of deep learning architectures with a focus on learning end-to-end models for these tasks, particularly image classification. During the 10-week course, students will learn to implement and train their own neural networks and gain a detailed understanding of cutting-edge research in computer vision. Additionally, the final assignment will give them the opportunity to train and apply multi-million parameter networks on real-world vision problems of their choice. Through multiple hands-on assignments and the final course project, students will acquire the toolset for setting up deep learning tasks and practical engineering tricks for training and fine-tuning deep neural networks.
+  link: https://github.com/BeeGass/CS231n-Convolutional-Neural-Networks-for-Visual-Recognition
+
 - name: "AI_Project2"
   description: In the class CS-4341, Artificial Intelligence, we were tasked to build an agent that could play the game of Gomoku. In order to achieve this the team implemented the MiniMax algorithm, Alpha-beta-pruning as well as our own understanding of evualtion function to facilitate the previous two algorithms.
   link: https://github.com/BeeGass/AI_Project2
-
-- name: "Self-Taught-Machine-Learning"
-  description: I have had trouble in the past finding a place where I could learn about statistical learning algorithms, resources as to how to learn them and the code associated with it. This is my attempt at remedying that issue.
-  link: https://github.com/BeeGass/Self-Taught-Machine-Learning
 
 - name: "General-Search"
   description: This is a general search algorithm that contains in a single algorithm a modular approach to running everything from depth first search to A* and Hill Climbing
