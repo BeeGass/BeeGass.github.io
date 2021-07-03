@@ -4,9 +4,9 @@ layout: project_template
 custom_css: styles
 ---
 <ul class="contact-list">
-    {% for item in site.data.gp %}
+    {% for repo in site.data.gp %}
         <li>
-            <h1>Hello</h1>
+            {% include cards.html reponame="CS-541-Deep-Learning" %}
         </li>
     {% endfor %}
 </ul>
