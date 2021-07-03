@@ -3,6 +3,7 @@ layout: post
 title: How To Style/Implement Allejo's Jekyll-TOC Using CSS
 author: Bryan
 categories: web-dev 
+custom_css: styles
 ---
 I support this website using a combination of jekyll and github pages. Unfortunately, github restricts an immense amount of plugins so a lot of work arounds have to be found, looked into and implemented in order to make seemingly simple task work. This has lead to my use of [allejo's excellent table of contents snippet](https://github.com/allejo/jekyll-toc). However, I find the documentation isn't exactly intuitive and for someone who isn't used to the world of web development a snippet like this can become confusing. My hope is to show you how to implement allejo's table of contents (TOC) and how to apply CSS to it.
 
