@@ -18,15 +18,20 @@ $white-900: #f2f2f3;
 html {
     --bg: #ffffff;
     --bg-secondary: #666666;
-    --headings: #FF0266;
+    --headings: #0645AD;
     --text: #23272A;
 }
 
 html[data-theme='dark'] {
     --bg: #121212;
     --bg-secondary: #474747;
-    --headings: #FF0266;
+    --headings: #0645AD;
     --text: #FFFFFF;
+}
+
+.footnote a {
+    color: #FF0266;
+    text-decoration: none;
 }
 
 .the_toc{
