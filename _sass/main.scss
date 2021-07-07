@@ -29,7 +29,12 @@ html[data-theme='dark'] {
     --text: #FFFFFF;
 }
 
-a.footnote {
+.footnote a{
+    color: #FF0266;
+    text-decoration: none;
+}
+
+a {
     color: #FF0266;
     text-decoration: none;
 }
