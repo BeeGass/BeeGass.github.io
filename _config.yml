@@ -13,7 +13,7 @@ reading_time:
 
 url: "https://beegass.dev/" # the base hostname & protocol for your site
 
-permalink: /:title:path
+permalink: /:title:output_ext
 
 plugins:
   - jekyll-sitemap
