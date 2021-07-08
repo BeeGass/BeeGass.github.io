@@ -12,7 +12,9 @@ I support this website using a combination of jekyll and github pages. Unfortuna
 If you want a simple working table of contents, simply put `{% raw %}{% include toc.html html=content %}{% endraw %}` in the same HTML layout where you have your `{% raw %}{{ content }}{% endraw %}`. However, if you want to customize your table of contents you need to add a few more parameters to the above liquid function call. This is shown within the `toc.html` file where they show an example of what you need.
 
 ```liquid
+{% raw %}
     {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+{% endraw %}
 ```
 
 the class and id variables can be tailored to whatever you want to call them, just to be explicit here is an example, i.e. `class = banana` and `id = wolfman`. From here we can begin styling our table of contents. 
