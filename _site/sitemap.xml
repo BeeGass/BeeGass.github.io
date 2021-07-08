@@ -1,13 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://beegass.github.io//2021/04/25/DQN.html</loc>
-<lastmod>2021-04-25T00:00:00-04:00</lastmod>
+  <loc>https://beegass.dev/</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://beegass.github.io//contact.html</loc>
+  <loc>https://beegass.dev/Notes/</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://beegass.github.io//</loc>
+  <loc>https://beegass.dev/projects</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://beegass.dev/contact</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Nuclear.html</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/jekyll-TOC-CSS.html</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/KaTeX.html</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/DQN.html</loc>
+  <lastmod>2021-07-08T20:36:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/bishops/Outline/bishops_outline</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw1/Homework1</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw2/Homework2</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw3/Homework3</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw4/Homework4</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw5/Homework5</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw6/Homework6</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Homeworks/hw7/Homework7</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/notation/notation</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Lect1/notes1</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Lect3/notes3</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Lect2/notes2</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Lect5/notes5</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://beegass.dev/Notes/notes/Deep-Learning/CS-541/Lect4/notes4</loc>
+  <lastmod>2021-07-03T01:19:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
