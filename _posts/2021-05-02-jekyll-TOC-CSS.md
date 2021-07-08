@@ -16,6 +16,12 @@ If you want a simple working table of contents, simply put `{% raw %}{% include 
     {% endraw %} 
 {% endhighlight %}
 
+```md
+    {% raw %}
+        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+    {% endraw %}
+```
+
 the class and id variables can be tailored to whatever you want to call them, just to be explicit here is an example, i.e. `class = banana` and `id = wolfman`. From here we can begin styling our table of contents. 
 
 ## Styling The Table Of Contents
@@ -27,7 +33,7 @@ There are a couple of components to understand when styling your table of conten
 #### Example Code
 For reference this is how my CSS looks to achieve the table of contents as of 5/2/2021
 
-{% highlight html linenos %}
+{% highlight css linenos %}
     .the_toc ul{
         font-size: 100%;
         color: var(--text);
@@ -49,6 +55,29 @@ For reference this is how my CSS looks to achieve the table of contents as of 5/
         text-decoration: none;
     }
 {% endhighlight %}
+
+```css
+    .the_toc ul{
+        font-size: 100%;
+        color: var(--text);
+        list-style-type: none;
+        text-decoration: none;
+        position: sticky;
+    }
+
+    .the_toc li{
+        font-size: 90%;
+        color: var(--text);
+        list-style-type: none;
+        margin:0 0 10px 0;
+        top: 2em;
+    }
+
+    .the_toc a{
+        color: var(--text);
+        text-decoration: none;
+    }
+```
 
 I hope this helps.
 

@@ -2,9 +2,11 @@ markdown: kramdown
 kramdown:
    # We're using mathjax because gh-pages forces it
    # we're also usint the auto-render katex extension because of it
-   math_engine: mathjax
-
-highlighter: rouge
+    math_engine: mathjax
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 reading_time:
   second_plural: "sec"    # default: seconds
