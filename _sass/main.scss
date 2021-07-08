@@ -39,7 +39,7 @@ a {
     text-decoration: none;
 }
 
-.the_toc div{
+.the_toc{
     position: sticky;
 }
 
@@ -92,7 +92,6 @@ strong,
 b,
 em,
 span,
-code,
 small {
     color: var(--text);
 }
