@@ -18,8 +18,8 @@ $white-800: #e7e8eb;
 $white-900: #f2f2f3;
 
 html {
-    --bg: #ffffff;
-    --bg-secondary: #666666;
+    --bg: #F6F6F6;
+    --bg-secondary: #FC8A15;
     --headings: #0645AD;
     --text: #23272A;
 }
@@ -28,7 +28,7 @@ html[data-theme='dark'] {
     --bg: #121212;
     --bg-secondary: #474747;
     --headings: #0645AD;
-    --text: #FFFFFF;
+    --text: #F6F6F6;
 }
 
 .footnote a{
@@ -94,9 +94,13 @@ strong,
 b,
 em,
 span,
-code,
 small {
     color: var(--text);
+}
+
+code{
+    color: var(--text);
+    background-color: var(--bg-secondary);
 }
 
 .posts a {
