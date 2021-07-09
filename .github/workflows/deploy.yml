@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install jekyll scholar extras
-        [sudo] gem install jekyll-scholar-extras
+        run: sudo gem install jekyll-scholar-extras
+
       - uses: helaili/jekyll-action@v2
 
 
