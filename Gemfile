@@ -14,5 +14,6 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-katex'
     gem 'jekyll-scholar'
+    gem 'jekyll-scholar-extras'
     gem 'rouge'
   end
