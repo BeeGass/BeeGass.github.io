@@ -17,8 +17,10 @@ url: "https://beegass.dev/" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
 
+bibliography_template: bibtemplate 
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
-  
+
