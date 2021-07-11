@@ -1,0 +1,114 @@
+@import url(OneDarkPro.css);
+html { --bg: #F6F6F6; --bg-secondary: #FC8A15; --headings: #0645AD; --text: #23272A; }
+
+html[data-theme='dark'] { --bg: #121212; --bg-secondary: #474747; --headings: #0645AD; --text: #F6F6F6; }
+
+.footnote a { color: #FF0266; text-decoration: none; }
+
+a { color: #FF0266; text-decoration: none; }
+
+.the_toc { position: sticky; }
+
+.the_toc ul { font-size: 100%; color: var(--text); list-style-type: none; text-decoration: none; }
+
+.the_toc li { font-size: 90%; color: var(--text); list-style-type: none; margin: 0 0 10px 0; top: 2em; }
+
+.the_toc a { color: var(--text); text-decoration: none; }
+
+* { font-family: 'Inter', sans-serif; color: var(--text); }
+
+body { background-color: var(--bg); line-height: 1.4; text-rendering: optimizeLegibility; }
+
+.container { background-color: var(--bg-secondary); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--text); }
+
+p, strong, b, em, span, code, small { color: var(--text); }
+
+.posts a { font-size: 1.00em; font-weight: 600; color: var(--text); text-decoration: none; margin-top: 5.4px; margin-bottom: 5.4px; }
+
+.blog-title { font-size: 1.85em; font-weight: 600; color: var(--text); text-decoration: none; margin-top: 5.4px; margin-bottom: 5.4px; }
+
+.posts a:hover { color: var(--text); text-decoration: underline; }
+
+.theme-toggle { padding: 0%; margin-left: 90%; background-color: transparent; border: none; }
+
+.theme-toggle i { color: var(--text); }
+
+.back-button { padding: 0%; margin-right: 100%; text-decoration: none; }
+
+.back-button i { color: var(--text); }
+
+#icon { color: var(--text); }
+
+img { width: 60px; height: 60px; }
+
+::selection { background: #c9ecff; }
+
+#content { font-size: 18px; max-width: 680px; }
+
+.aside-1 { max-width: 21rem; font-size: 80%; }
+
+#bio-info { font-size: 70%; line-height: 1.4; max-width: 21rem; color: var(--text); }
+
+.page-layout { margin: 3em 1em; }
+
+.profile-name { font-size: 80%; font-variant: small-caps; font-variant-numeric: normal; font-weight: 700; margin: 0.5em 0em; color: var(--text); }
+
+.list-inline-item a:hover { color: var(--text); text-decoration: underline; }
+
+ol, ul { padding-left: inherit; }
+
+.list-inline-item a { padding: 0px; font-size: 70%; color: var(--bg-secondary); text-decoration: none; }
+
+.nav-item a { color: var(--text); }
+
+.nav-item a:hover { color: var(--text); }
+
+.nav a:hover { border-left: 1px solid var(--text); height: 30px; }
+
+.contact-button { color: var(--bg); background: var(--text); border: none; font-family: 'Inter', sans-serif; }
+
+.contact-list { list-style-type: none; margin-left: 0%; }
+
+.contact-list li { margin: 0 0 20px 0; }
+
+.contact-text-fields { background: var(--bg); color: var(--text); border-color: var(--text); border-block-width: 2px; }
+
+.above-text-fields { font-size: 80%; margin-top: 5%; color: var(--text); }
+
+.copy-right { font-size: 30%; position: absolute; bottom: 5px; color: var(--bg-secondary); }
+
+.repos-list { list-style-type: none; display: inline-block; }
+
+.github-repo-card { font-family: Segoe UI, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol; width: 90%; height: 80% !important; text-align: left !important; background-color: var(--text) !important; border-radius: 3px !important; padding: 16px !important; margin-bottom: 16px; }
+
+@media screen and (max-width: 1200px) { .github-repo-card { width: 60%; } }
+
+@media screen and (max-width: 800px) { .github-repo-card { width: 80%; } }
+
+.github-repo-card img { height: 0; }
+
+.github-repo-card a { text-decoration: none; }
+
+.github-repo-card .d-flex { display: flex !important; margin-bottom: 4px !important; align-items: flex-start !important; justify-content: space-between !important; }
+
+.github-repo-card h1 { font-size: 18px !important; line-height: 1.25 !important; margin-bottom: 4px !important; }
+
+.github-repo-card h1 .gh-icon { font-size: 25px !important; color: #dd0e0e !important; }
+
+.github-repo-card h1 span { font-weight: 400 !important; color: #0645AD; }
+
+.github-repo-card .github-repo-text { color: var(--bg) !important; font-size: 14px; line-height: 21px; display: flex !important; white-space: normal !important; margin-bottom: 8px !important; }
+
+.github-repo-card .stats-icons { font-size: 12px !important; color: var(--bg); }
+
+.github-repo-card .stats-icons a { display: inline-block !important; margin-right: 24px !important; color: var(--bg) !important; }
+
+.stats-icons a i { color: var(--bg); }
+
+.github-repo-card .gh-icon { margin-right: 4px !important; }
+
+html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 650ms !important; transition-delay: 0 !important; }
+
+/*# sourceMappingURL=styles.css.map */
