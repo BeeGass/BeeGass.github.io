@@ -23,4 +23,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
+  - "jekyll-github-metadata"
 
