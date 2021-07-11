@@ -20,5 +20,5 @@ permalink: /:title:output_ext
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-scholar
+  - jekyll/scholar
   
