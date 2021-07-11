@@ -23,5 +23,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           allow_empty_commit: true
-          enable_jekyll: true
+          enable_jekyll: false
           cname: https://beegass.dev/
