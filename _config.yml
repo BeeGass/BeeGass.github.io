@@ -19,6 +19,7 @@ permalink: /:title:output_ext
 
 repository: BeeGass/BeeGass.github.io
 author: Bryan Gass
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
