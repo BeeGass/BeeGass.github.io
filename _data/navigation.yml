@@ -6,6 +6,12 @@
 
 - name: Projects
   link: /projects
+
+- name: Search
+  link: /search
+
+- name: Tags
+  link: /tags
   
 - name: Contact
   link: /contact

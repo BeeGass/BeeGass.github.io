@@ -1,0 +1,16 @@
+current directory: /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/home/beegass/miniconda3/envs/mysite/bin/ruby -I /home/beegass/miniconda3/envs/mysite/lib/ruby/2.7.0 -r ./siteconf20211011-41246-g92s8f.rb extconf.rb
+creating Makefile
+
+current directory: /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20211011-41246-1h816r0
