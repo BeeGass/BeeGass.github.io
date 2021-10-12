@@ -17,6 +17,8 @@ url: "https://beegass.dev/" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
 
+repository: BeeGass/BeeGass.github.io
+author: Bryan Gass
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
