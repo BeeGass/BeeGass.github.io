@@ -12,6 +12,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
+      - name: convert notebooks and word docs to posts
+        uses: fastai/fastpages@master
+        with:
+          BOOL_SAVE_MARKDOWN: true
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+
       - name: Install And Build
         uses: helaili/jekyll-action@v2
         with:

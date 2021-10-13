@@ -14,6 +14,9 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-scholar'
     gem 'rouge'
-    gem 'jekyll-github-metadata'
-    gem 'jekyll-spaceship'
+    gem 'jekyll-katex'
+#   gem 'jekyll-github-metadata'
+#   gem 'jekyll-spaceship'
   end
+
+  gem 'therubyracer'
