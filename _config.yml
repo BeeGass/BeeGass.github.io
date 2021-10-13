@@ -77,6 +77,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll/scholar
   - jekyll-katex
-# - jekyll-spaceship
+# - jekyll-spaceship https://github.com/jeffreytse/jekyll-spaceship#21-performance-optimization 
 # - jekyll-github-metadata
-# - jekyll-jupyter-notebook
+# - jekyll-jupyter-notebook https://github.com/red-data-tools/jekyll-jupyter-notebook
