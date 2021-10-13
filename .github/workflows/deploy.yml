@@ -20,9 +20,6 @@ jobs:
         
       - name: install ruby
         run: sudo apt-get install ruby-full
-        
-      - name: update ruby
-        run: sudo gem update --system 
       
       - name: install jekyll bundler
         run: gem install jekyll bundler
