@@ -1,21 +1,24 @@
-markdown: kramdown
-kramdown:
-   # We're using mathjax because gh-pages forces it
-   # we're also usint the auto-render katex extension because of it
-    math_engine: mathjax
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
-
-# highlighter: rouge
 # markdown: kramdown
 # kramdown:
-#   math_engine: katex
-#   input: GFM
-#   auto_ids: true
-#   hard_wrap: false
-#   syntax_highlighter: rouge
+#    # We're using mathjax because gh-pages forces it
+#    # we're also usint the auto-render katex extension because of it
+#     math_engine: mathjax
+#     highlighter: rouge
+#     syntax_highlighter_opts:
+#         block:
+#             line_numbers: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  highlighter: rouge
+  syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 reading_time:
   second_plural: "sec"    # default: seconds
@@ -31,36 +34,16 @@ github_username: BeeGass
 author: Bryan Gass
 
 # jekyll-spaceship config #
-# Where things are
+
 jekyll-spaceship:
   # default enabled processors
   processors:
     - table-processor
-    - mathjax-processor
     - plantuml-processor
     - mermaid-processor
     - polyfill-processor
     - media-processor
-    - emoji-processor
     - element-processor
-  mathjax-processor:
-    src:
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    config:
-      tex:
-        inlineMath:
-          - ['$','$']
-          - ['\(','\)']
-        displayMath:
-          - ['$$','$$']
-          - ['\[','\]']
-      svg:
-        fontCache: 'global'
-    optimize: # optimization on building stage to check and add mathjax scripts
-      enabled: true # value `false` for adding to all pages
-      include: []   # include patterns for math expressions checking (regexp)
-      exclude: []   # exclude patterns for math expressions checking (regexp)
   plantuml-processor:
     mode: default  # mode value 'pre-fetch' for fetching image at building stage
     css:
@@ -88,18 +71,14 @@ jekyll-spaceship:
       frameborder: 0
       style: 'max-width: 600px; outline: none;'
       allow: 'encrypted-media; picture-in-picture'
-  emoji-processor:
-    css:
-      class: emoji
-    src: https://github.githubassets.com/images/icons/emoji/
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
   - jekyll-katex
-# - jekyll-github-metadata
 # - jekyll-spaceship
+# - jekyll-github-metadata
 # - jekyll-jupyter-notebook
 
 

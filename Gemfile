@@ -15,8 +15,9 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'rouge'
     gem 'jekyll-katex'
-#   gem 'jekyll-github-metadata'
 #   gem 'jekyll-spaceship'
+#   gem 'jekyll-github-metadata'
   end
-
-  gem 'therubyracer'
+  
+gem "kramdown-math-katex"
+gem 'therubyracer'
