@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- KATEX STUFF -->
+<!-- --------------------------------------------------------------------------------- -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"> -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script> -->
+
+<!-- MATHJAX -->
+<!-- --------------------------------------------------------------------------------- -->
+<!-- temporary comment-->
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+<!-- LIBRARY STUFF -->
+<!-- --------------------------------------------------------------------------------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"></script>
+
+<!-- FONTS AND FONT AWESOME -->
+<!-- --------------------------------------------------------------------------------- -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+<!-- BOOTSTRAP STUFF -->
+<!-- --------------------------------------------------------------------------------- -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<!-- MY CSS -->
+<!-- --------------------------------------------------------------------------------- -->
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+        
+            <link rel="stylesheet" href="/assets/css/styles.css">
+        
+    
+
+<!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+
+<!-- MY JAVASCRIPT -->
+<!-- --------------------------------------------------------------------------------- -->
+<script src="assets/js/dark-mode.js"></script>
+
+
+<!-- META DATA FOR LINK PREVIEW-->
+<!-- --------------------------------------------------------------------------------- -->
+<!-- Open graph tags -->
+<meta property="og:title" content="Bryan Gass">
+<meta property="og:url" content="https://beegass.dev/">
+<meta property="og:image" content="https://beegass.dev/paintingMe.jpg">
+<meta property="og:description" content="Computer Science student at Worcester Polytechnic Institute. Interested in machine learning, mathematics, cafe racers, finding the tastiest ramen.">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- --------------------------------------------------------------------------------- -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN42G1K3H4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QN42G1K3H4');
+</script>
+
+
+    
+
+
+
+
+
+
+
+<!-- Encoding -->
+<!-- --------------------------------------------------------------------------------- -->
+<meta charset="UTF-8">
+
+    <title>How Deep Q-Networks Work</title>
+</head>
+
+<body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
+    <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
+        <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">
+            <!--could not get the right padding exactly 2rem using bootstrap's css-->
+            <div class="the_toc">
+                <ul class="inline_toc" id="my_toc">
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#q-learning">Q-Learning</a></li>
+<li>
+<a href="#content-1">Content 1</a><ul>
+<li><a href="#diagram-1">Diagram 1</a></li>
+<li><a href="#diagram-2">Diagram 2</a></li>
+</ul>
+</li>
+</ul>
+<li><a href="#content-2">Content 2</a></li>
+<li><a href="#comments-section">Comments Section</a></li>
+            </div>
+        </div>
+
+        <div class="flex-grow-1 lh-base px-3 py3" id="content">
+            <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
+            <div class="flex-sm-row">
+                <a class="back-button" href="/"><i class="fas fa-arrow-left"></i></a>
+                <h1 class="blog-title">How Deep Q-Networks Work</h1>
+<span>
+    
+        [
+        <a href="/tag/reinforcement-learning"><code class="highligher-rouge"><nobr id="tag-name">reinforcement-learning</nobr></code> </a>]
+
+    
+</span>
+<p>25 Apr 2021 - <span class="reading-time" title="Estimated read time">
+    
+    4 min read.
+</span></p>
+
+<p>STILL BEING WRITTEN</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Understanding deep Q-networks begins with understanding Q-learning. A poor analogy would be thinking of Q-learning as pre-calculus to DQN’s calculus. They in theory do the same stuff but if you want to handle more, be more efficient and/or scale up then you want to put away doing derivations by using the definition and begin using more powerful tools. 
+\(\begin{align*}
+	\frac{dy}{dx} = \lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h}
+\end{align*}\)</p>
+
+<h2 id="q-learning">Q-Learning</h2>
+
+<p>The basis</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta, libero a egestas gravida, augue sapien dignissim urna, sed varius ligula neque et risus. Praesent nisi lacus, dapibus ut nunc eget, feugiat fringilla dui. Phasellus rhoncus, massa sit amet varius lobortis, magna sapien consectetur libero, id dignissim metus dolor id eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas mattis pretium sem, blandit pulvinar est hendrerit quis. Sed ut ultrices augue, ut cursus mi. Duis interdum ipsum velit, vel vestibulum ante maximus in. Mauris pretium nisl dui, in suscipit nisi tristique eget. Pellentesque sed porttitor urna, vitae viverra massa. Sed porttitor efficitur semper. Nulla elit augue, scelerisque at ligula eu, ultricies luctus metus. Fusce dapibus ligula eget nisi dictum, at bibendum lacus bibendum. Aenean ornare in lacus eget convallis. Pellentesque ac sapien eget lectus tincidunt interdum ac eu nisl.</p>
+
+<h2 id="content-1">Content 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc purus, eleifend sit amet pulvinar sed, mollis vitae purus. Proin metus nibh, posuere in consequat quis, vehicula eu nisi. Aenean rutrum eu sapien id aliquet. Etiam sit amet lorem cursus, interdum nisi eu, imperdiet ante. Mauris bibendum euismod orci quis congue. Nam et tempus nunc. Etiam convallis diam et eros commodo dictum eget a magna. Curabitur ut erat justo. Sed imperdiet vel nisi eu egestas. Suspendisse congue elit eu est lobortis, nec varius nibh fringilla. Nunc sollicitudin rutrum augue, \(\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\) at aliquam turpis pharetra accumsan. Suspendisse lacinia enim nec ornare porttitor. Praesent viverra eros eu tellus venenatis, sed faucibus ligula consectetur. Aliquam eleifend augue id malesuada efficitur. Morbi porta leo sed arcu pharetra, eget consequat dui condimentum.</p>
+
+<h6 id="diagram-1">Diagram 1</h6>
+<p>\[\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\]</p>
+
+<h6 id="diagram-2">Diagram 2</h6>
+<p>\[\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\]</p>
+
+<p>Aliquam erat volutpat. Phasellus et imperdiet metus. Morbi fringilla justo non dictum volutpat. Proin imperdiet velit at facilisis efficitur. Nulla at euismod est. Aenean in nisi ultrices, consectetur urna a, sodales nibh. Pellentesque dui massa, volutpat non mattis a, pulvinar at libero. \(\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\) Pellentesque consequat sollicitudin purus, non tempus augue consequat ac. Praesent libero turpis, dignissim sit amet dolor nec, scelerisque maximus eros.</p>
+
+<p>Donec pellentesque, nulla ac hendrerit aliquet, sem dolor sodales tortor, id ornare est lorem in nulla. Aliquam tempus lorem non cursus volutpat. Suspendisse nisi purus, cursus et tempus ut, hendrerit at sapien. Nam \(\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\) a neque sit amet ante elementum convallis eu id libero. Vivamus pharetra mollis urna vel interdum. In vitae odio diam. Morbi porttitor aliquet metus a molestie. Nam id lobortis velit.</p>
+
+<h2 id="content-2">Content 2</h2>
+<p>Donec vitae commodo nibh. Pellentesque vehicula, metus efficitur laoreet ultrices, ligula dolor lacinia magna, aliquam porttitor tellus ante nec augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ornare metus et erat hendrerit suscipit. Sed leo neque, \(\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\) malesuada sed fermentum posuere, interdum vitae mi. Etiam egestas nisi vitae lectus semper, ac varius massa ullamcorper. Nullam eu dui ut mi gravida lobortis ac luctus nisl. Sed pharetra, tellus et porttitor aliquam, ante justo eleifend velit, in pretium justo massa vel metus. Curabitur commodo sit amet ante in pretium. Mauris eget tempor nisl. Aliquam eleifend, ante ut blandit feugiat, odio mauris mollis massa, sit amet suscipit orci urna non est. Duis ut lectus at ligula egestas venenatis ac vitae tortor. Fusce pulvinar faucibus dui.</p>
+
+<p>Phasellus dui est, volutpat rutrum lacinia nec, placerat a tortor. Nulla in quam sed eros consectetur venenatis. Donec eget rutrum nisl. Nunc suscipit nunc non lectus tristique consequat ullamcorper ut sapien. \(\frac{d}{dx}\left( \int_{0}^{x} f(u)\,du\right)=f(x)\) Pellentesque non lorem ac diam finibus pretium in a massa. Donec malesuada, nulla a condimentum ultrices, quam massa imperdiet odio, ac vulputate ante eros id diam. Etiam tristique eros ipsum, sit amet venenatis purus sollicitudin et. Curabitur viverra nunc imperdiet pulvinar consectetur. Vivamus tincidunt iaculis eros ut lobortis.</p>
+
+<h2 id="comments-section">Comments Section</h2>
+
+
+<script src="https://utteranc.es/client.js" repo="BeeGass/BeeGass.github.io" issue-term="url" label="Website" theme="github-dark" crossorigin="anonymous" async>
+</script>
+
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+	
+        <!--
+            Previously script that would parse intermediate representation of KaTeX 
+            now, we just need to use KaTeX to parse the representation diretly
+            via the auto-render extension
+        -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+	
+
+    <script>
+        $(document).ready(function(){
+            var str =$(this).attr('id');
+            
+            $(".btnId").click(function(){
+                var str = $(this).attr('id');
+                var ret = str.split("_");
+                var id = ret[1];
+                $('#' + id).toggle();
+            });
+        });
+    </script>
+    
+</footer>
+
+</html>
