@@ -146,6 +146,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  execjs
   jekyll
   jekyll-feed
   jekyll-gist
