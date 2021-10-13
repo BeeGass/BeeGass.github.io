@@ -20,18 +20,16 @@ jobs:
         
       - name: install ruby
         uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: bundle exec rake
 
       - name: convert notebooks and word docs to posts
         uses: fastai/fastpages@master
         with:
           BOOL_SAVE_MARKDOWN: false
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
-          
-      - name: update bundle
-        run: bundle install
-        
-      - name: update bundle
-        run: bundle update
         
       - name: Install And Build
         uses: helaili/jekyll-action@v2
