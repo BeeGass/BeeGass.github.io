@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--text); }
 
 p, strong, b, em, span, code, small { color: var(--text); }
 
+nobr { color: var(--bg-secondary); }
+
 .posts a { font-size: 1.00em; font-weight: 600; color: var(--text); text-decoration: none; margin-top: 5.4px; margin-bottom: 5.4px; }
 
 .blog-title { font-size: 1.85em; font-weight: 600; color: var(--text); text-decoration: none; margin-top: 5.4px; margin-bottom: 5.4px; }

@@ -1,8 +1,11 @@
-{% for post in site.posts %}
-    <li >
-        <div href="{{ post.url }}">{{ post.date | date_to_string }} - {% include read-time.html content=post.content %}</div>
-        <h2 class="posts"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 50 }}
+{% for page in site.posts %}
+    <li>
+        <div href="{{ page.url }}">
+            {{ page.date | date_to_string }} - {% include read-time.html content=page.content %}
+            {% include tag-lister.html %}
+        </div> 
+        <h2 class="posts"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+        {{ page.excerpt | strip_html | strip_newlines | truncatewords: 50 }}
     </li>
 {% endfor %}
 

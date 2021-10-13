@@ -3,6 +3,7 @@ layout: post_template
 custom_css: styles
 ---
 <h1 class = "blog-title">{{ page.title }}</h1>
+{% include tag-lister.html %}
 <p>{{ page.date | date_to_string }} - {% include read-time.html content=content %}</p>
 
 {{ content }}

@@ -18,11 +18,52 @@ url: "https://beegass.dev/" # the base hostname & protocol for your site
 permalink: /:title:output_ext
 
 repository: BeeGass/BeeGass.github.io
+github_username: BeeGass
 author: Bryan Gass
+
+# jekyll-spaceship config #
+
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
+  mermaid-processor:
+    mode: default  # mode value 'pre-fetch' for fetching image at building stage
+    css:
+      class: mermaid
+    syntax:
+      code: 'mermaid!'
+      custom: ['@startmermaid', '@endmermaid']
+    config:
+      theme: default
+    src: https://mermaid.ink/svg/
+  media-processor:
+    default:
+      id: 'media-{id}'
+      class: 'media'
+      width: '100%'
+      height: 350
+      frameborder: 0
+      style: 'max-width: 600px; outline: none;'
+      allow: 'encrypted-media; picture-in-picture'
+  emoji-processor:
+    css:
+      class: emoji
+    src: https://github.githubassets.com/images/icons/emoji/
+
+
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll/scholar
-  - "jekyll-github-metadata"
+  - jekyll-github-metadata
+  - jekyll-spaceship
+
 
