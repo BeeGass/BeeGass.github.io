@@ -18,23 +18,23 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #     gem 'jekyll-github-metadata'
 # #   gem 'jekyll-spaceship'
 #   end
+gem 'therubyracer'
+gem 'kramdown-math-katex'
 
 group :jekyll_plugins do
-    gem "jekyll"
-    gem "jekyll-feed", "~> 0.12"
+    gem 'jekyll'
+    gem 'jekyll-feed'
     gem 'jekyll-octicons'
-    gem "jekyll-twitter-plugin"
+    gem 'jekyll-twitter-plugin'
     gem 'jekyll-relative-links'
     gem 'jekyll-seo-tag'
     gem 'jekyll-toc'
     gem 'jekyll-gist'
-    gem "jekyll-paginate"
+    gem 'jekyll-paginate'
     gem 'jekyll-sitemap'
-    gem 'jekyll-scholar'
     gem 'jekyll-github-metadata'
     gem 'jekyll-katex'
+    gem 'jekyll-scholar'
+#   gem 'github-pages'
 #   gem 'jekyll-spaceship'
   end
-
-gem "kramdown-math-katex"
-gem 'therubyracer'
