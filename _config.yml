@@ -25,7 +25,7 @@ reading_time:
   minute_singular: "min"  # default: minute
   minute_plural: "min"    # default: minutes
 
-url: "https://beegass.dev/" # the base hostname & protocol for your site
+url: "https://beegass.dev" # the base hostname & protocol for your site
 
 permalink: /:title:output_ext
 
