@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/BeeGass/BeeGass.github.io",
-  "build_revision": "1f5ee2e480d9c2d7a888a0d025e79c417dca4256",
+  "build_revision": "8b1e1f4a21bbcddba2bc294bc001cfaa81756e3e",
   "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
   "contributors": [
     {
@@ -344,8 +344,8 @@
       "releases_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/deployments",
       "created_at": "2021-04-23 22:31:38 UTC",
-      "updated_at": "2021-10-13 06:40:09 UTC",
-      "pushed_at": "2021-10-13 06:40:06 UTC",
+      "updated_at": "2021-10-13 06:45:40 UTC",
+      "pushed_at": "2021-10-13 06:45:37 UTC",
       "git_url": "git://github.com/BeeGass/BeeGass.github.io.git",
       "ssh_url": "git@github.com:BeeGass/BeeGass.github.io.git",
       "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
@@ -2741,4 +2741,4 @@
   },
   "wiki_url": "https://github.com/BeeGass/BeeGass.github.io/wiki",
   "zip_url": "https://github.com/BeeGass/BeeGass.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x00005598e3342958 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x00005598e3342868 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000055fca84065a0 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x000055fca84064b0 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET
