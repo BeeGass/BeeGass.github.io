@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,69 +81,91 @@
 <!-- --------------------------------------------------------------------------------- -->
 <meta charset="UTF-8">
 
-    <title>Automatic Differentiation And How It Works</title>
+    <title>Tag: web-dev</title>
 </head>
-
-<body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
+<body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0" id="beegass">
     <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
-        <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">
-            <!--could not get the right padding exactly 2rem using bootstrap's css-->
-            <div class="the_toc">
-                <ul class="inline_toc" id="my_toc"><li><a href="#comments-section">Comments Section</a></li></ul>
+        <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">  <!--could not get the right padding exactly 2rem using bootstrap's css-->
+            <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
+            <img src= \paintingMe.jpg class="rounded rounded-border-radius-4" alt="...">
+            <div class="fw-bolder my-1 profile-name">
+                Bryan Gass
             </div>
+            <div class="flex-column flex-lg-row" id="bio-info">
+                Computer Science student at Worcester Polytechnic Institute. Interested in machine learning, mathematics, cafe racers, finding the tastiest ramen.
+            </div>
+            <div class="my-2 text-black-50">
+                <ul class="list-inline-item">
+                    
+    <a class="fs-6 list-inline-item link-secondary" href="https://github.com/BeeGass">
+        Github
+    </a>
+
+    <a class="fs-6 list-inline-item link-secondary" href="https://www.linkedin.com/in/beegassy/">
+        LinkedIn
+    </a>
+
+    <a class="fs-6 list-inline-item link-secondary" href="https://drive.google.com/file/d/1oRVWuL40ZSLum5yx8wx2iViS0gZkUb9K/view?usp=sharing">
+        Resume
+    </a>
+
+    <a class="fs-6 list-inline-item link-secondary" href="mailto:Bryank123@live.com">
+        @
+    </a>
+
+                </ul>
+            </div>
+            <ul class="nav flex-column">
+                <nav >
+    <li class="nav-item">
+        
+            <a class="fw-bold fs-5 nav-link link-dark" href="/" >
+                Articles
+            </a>
+        
+            <a class="fw-bold fs-5 nav-link link-dark" href="https://beegass.dev/Notes/" >
+                Notes
+            </a>
+        
+            <a class="fw-bold fs-5 nav-link link-dark" href="/projects" >
+                Projects
+            </a>
+        
+            <a class="fw-bold fs-5 nav-link link-dark" href="/tags" >
+                Tags
+            </a>
+        
+            <a class="fw-bold fs-5 nav-link link-dark" href="/contact" >
+                Contact
+            </a>
+        
+    </li>
+</nav>
+            </ul>
         </div>
 
-        <div class="flex-grow-1 lh-base px-3 py3" id="content">
-            <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
+    <div class="flex-grow-1 lh-base px-3 py3" id="content"> 
             <div class="flex-sm-row">
-                <a class="back-button" href="/"><i class="fas fa-arrow-left"></i></a>
-                <h1 class = "blog-title">Automatic Differentiation And How It Works</h1>
-<span>
-    
-        [
-        <a href="/tag/automatic-differentiation"><code class="highligher-rouge"><nobr id="tag-name">automatic-differentiation</nobr></code>&nbsp;</a>]
-
-    
-        [
-        <a href="/tag/math"><code class="highligher-rouge"><nobr id="tag-name">math</nobr></code>&nbsp;</a>]
-
-    
-</span>
-<p>11 Oct 2021 - <span class="reading-time" title="Estimated read time">
-    
-    1 min read.
-</span></p>
-
-<p>STILL BEING WRITTEN</p>
-
-<h2 id="comments-section">Comments Section</h2>
-
-
-<script src="https://utteranc.es/client.js"
-        repo="BeeGass/BeeGass.github.io"
-        issue-term="url"
-        label="Website"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-
+                <div class="post">
+    <h1>Tag: web-dev</h1>
+    <ul>
+        
+            <li><a href="/jekyll-TOC-CSS.html">How To Style/Implement Allejo's Jekyll-TOC Using CSS</a> (02 May 2021)<br>
+                
+            </li>
+        
+            <li><a href="/KaTeX.html">Getting KaTeX To Work On Jekyll</a> (30 Apr 2021)<br>
+                
+            </li>
+        
+    </ul>
+</div>
+<hr>
             </div>
         </div>
     </div>
 </body>
 <footer>
-	
-        <!--
-            Previously script that would parse intermediate representation of KaTeX 
-            now, we just need to use KaTeX to parse the representation diretly
-            via the auto-render extension
-        -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-
 	
 
     <script>
@@ -161,5 +182,4 @@
     </script>
     
 </footer>
-
 </html>
