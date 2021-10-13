@@ -19,7 +19,7 @@ jobs:
         run: sudo apt-get install nodejs
         
       - name: install ruby
-        run: sudo apt-get install ruby-full
+        uses: ruby/setup-ruby@v1
 
       - name: convert notebooks and word docs to posts
         uses: fastai/fastpages@master
@@ -27,6 +27,9 @@ jobs:
           BOOL_SAVE_MARKDOWN: false
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           
+      - name: update bundle
+        run: bundle install
+        
       - name: update bundle
         run: bundle update
         
