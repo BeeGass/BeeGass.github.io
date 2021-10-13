@@ -39,8 +39,3 @@ group :jekyll_plugins do
 #   gem 'github-pages'
 #   gem 'jekyll-spaceship'
   end
-
-  - name: Install And Build
-        uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
