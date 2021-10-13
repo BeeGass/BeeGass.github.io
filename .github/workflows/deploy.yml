@@ -18,12 +18,11 @@ jobs:
       - name: Install nodejs
         run: sudo apt-get install nodejs
         
-      - name: install ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6 # Not needed with a .ruby-version file
+          ruby-version: 2.7 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          
+        
       - name: install execjs
         run: gem install execjs
 
@@ -33,10 +32,9 @@ jobs:
           BOOL_SAVE_MARKDOWN: false
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
 
-      - name: Install And Build
-        uses: helaili/jekyll-action@v2
+      - uses: limjh16/jekyll-action-ts@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          enable_cache: true
 
           
       - name: Deploy to GitHub Pages
