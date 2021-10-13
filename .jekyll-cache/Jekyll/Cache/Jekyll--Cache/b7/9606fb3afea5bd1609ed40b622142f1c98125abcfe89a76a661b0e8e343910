@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/BeeGass/BeeGass.github.io",
-  "build_revision": "d99d882bad2d99d0f3473b29e249dd2ea383b454",
+  "build_revision": "1831832162d4131e1efa081dafdf18c3d510691e",
   "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
   "contributors": [
     {
@@ -344,14 +344,14 @@
       "releases_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/deployments",
       "created_at": "2021-04-23 22:31:38 UTC",
-      "updated_at": "2021-10-13 09:29:23 UTC",
-      "pushed_at": "2021-10-13 09:31:40 UTC",
+      "updated_at": "2021-10-13 10:12:31 UTC",
+      "pushed_at": "2021-10-13 10:14:38 UTC",
       "git_url": "git://github.com/BeeGass/BeeGass.github.io.git",
       "ssh_url": "git@github.com:BeeGass/BeeGass.github.io.git",
       "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
       "svn_url": "https://github.com/BeeGass/BeeGass.github.io",
       "homepage": "https://beegass.github.io/",
-      "size": 58239,
+      "size": 59983,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Jupyter Notebook",
@@ -2741,4 +2741,4 @@
   },
   "wiki_url": "https://github.com/BeeGass/BeeGass.github.io/wiki",
   "zip_url": "https://github.com/BeeGass/BeeGass.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000055f216ee6958 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x000055f216ee6688 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x0000562d2bd75858 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x0000562d2bd75560 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET
