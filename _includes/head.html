@@ -1,3 +1,17 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{%- if page.twitter_large_image -%}
+  <meta name="twitter:card" content="summary_large_image" />
+{%- else -%}
+  <meta name="twitter:card" content="summary" />
+{%- endif -%}
+
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ page.description }}">
+
+<!-- SEO and meta information for twitter/whatsupp cards -->
+{%- seo -%}
+<!-- Feed -->
+{%- feed_meta -%}
 
 <!-- KATEX STUFF -->
 {% if site.use_math %}
