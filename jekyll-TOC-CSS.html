@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<!-- KATEX STUFF -->
-<!-- --------------------------------------------------------------------------------- -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"> -->
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script> -->
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="twitter:card" content="summary" /><title>How To Style/Implement Allejo's Jekyll-TOC Using CSS | BeeGass.github.io</title>
+<meta name="description" content="">
 
-<!-- MATHJAX -->
-<!-- --------------------------------------------------------------------------------- -->
-<!-- temporary comment-->
-<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
-<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+<!-- SEO and meta information for twitter/whatsupp cards --><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>How To Style/Implement Allejo’s Jekyll-TOC Using CSS | BeeGass.github.io</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="How To Style/Implement Allejo’s Jekyll-TOC Using CSS" />
+<meta name="author" content="Bryan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I support this website using a combination of jekyll and github pages. Unfortunately, github restricts an immense amount of plugins so a lot of work arounds have to be found, looked into and implemented in order to make seemingly simple task work. This has lead to my use of allejo’s excellent table of contents snippet. However, I find the documentation isn’t exactly intuitive and for someone who isn’t used to the world of web development a snippet like this can become confusing. My hope is to show you how to implement allejo’s table of contents (TOC) and how to apply CSS to it." />
+<meta property="og:description" content="I support this website using a combination of jekyll and github pages. Unfortunately, github restricts an immense amount of plugins so a lot of work arounds have to be found, looked into and implemented in order to make seemingly simple task work. This has lead to my use of allejo’s excellent table of contents snippet. However, I find the documentation isn’t exactly intuitive and for someone who isn’t used to the world of web development a snippet like this can become confusing. My hope is to show you how to implement allejo’s table of contents (TOC) and how to apply CSS to it." />
+<link rel="canonical" href="https://beegass.dev//pages/BeeGass/jekyll-TOC-CSS.html" />
+<meta property="og:url" content="https://beegass.dev//pages/BeeGass/jekyll-TOC-CSS.html" />
+<meta property="og:site_name" content="BeeGass.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How To Style/Implement Allejo’s Jekyll-TOC Using CSS" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Bryan"},"@type":"BlogPosting","headline":"How To Style/Implement Allejo’s Jekyll-TOC Using CSS","dateModified":"2021-05-02T00:00:00-05:00","description":"I support this website using a combination of jekyll and github pages. Unfortunately, github restricts an immense amount of plugins so a lot of work arounds have to be found, looked into and implemented in order to make seemingly simple task work. This has lead to my use of allejo’s excellent table of contents snippet. However, I find the documentation isn’t exactly intuitive and for someone who isn’t used to the world of web development a snippet like this can become confusing. My hope is to show you how to implement allejo’s table of contents (TOC) and how to apply CSS to it.","datePublished":"2021-05-02T00:00:00-05:00","url":"https://beegass.dev//pages/BeeGass/jekyll-TOC-CSS.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://beegass.dev//pages/BeeGass/jekyll-TOC-CSS.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Feed --><link type="application/atom+xml" rel="alternate" href="https://beegass.dev//pages/BeeGass/feed.xml" title="BeeGass.github.io" /><!-- KATEX STUFF -->
+
 
 <!-- LIBRARY STUFF -->
 <!-- --------------------------------------------------------------------------------- -->
@@ -198,27 +209,11 @@
         crossorigin="anonymous"
         async>
 </script>
-
             </div>
         </div>
     </div>
 </body>
 <footer>
-	
-
-    <script>
-        $(document).ready(function(){
-            var str =$(this).attr('id');
-            
-            $(".btnId").click(function(){
-                var str = $(this).attr('id');
-                var ret = str.split("_");
-                var id = ret[1];
-                $('#' + id).toggle();
-            });
-        });
-    </script>
     
 </footer>
-
 </html>
