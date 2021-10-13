@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/BeeGass/BeeGass.github.io",
-  "build_revision": "a473af9e8eb669d61429fd91209663ea834e0f71",
+  "build_revision": "f522f47013d3d3dc1861b045c51646c4683a304f",
   "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
   "contributors": [
     {
@@ -344,8 +344,8 @@
       "releases_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/deployments",
       "created_at": "2021-04-23 22:31:38 UTC",
-      "updated_at": "2021-10-13 06:53:18 UTC",
-      "pushed_at": "2021-10-13 06:53:14 UTC",
+      "updated_at": "2021-10-13 07:01:55 UTC",
+      "pushed_at": "2021-10-13 07:01:52 UTC",
       "git_url": "git://github.com/BeeGass/BeeGass.github.io.git",
       "ssh_url": "git@github.com:BeeGass/BeeGass.github.io.git",
       "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
@@ -2741,4 +2741,4 @@
   },
   "wiki_url": "https://github.com/BeeGass/BeeGass.github.io/wiki",
   "zip_url": "https://github.com/BeeGass/BeeGass.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000055e67a575420 @key="title", @value=#<Proc:0x000055e67a575448 /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x000055e67a575330 @key="description", @value=#<Proc:0x000055e67a575358 /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x0000559f95411ee8 @key="title", @value=#<Proc:0x0000559f95411f10 /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:58>>, "description"=>#<Jekyll::GitHubMetadata::Value:0x0000559f95411df8 @key="description", @value=#<Proc:0x0000559f95411e20 /home/beegass/Documents/Coding/BeeGass.github.io/vendor/bundle/ruby/2.7.0/gems/jekyll-github-metadata-2.13.0/lib/jekyll-github-metadata/site_github_munger.rb:60>>}:ET

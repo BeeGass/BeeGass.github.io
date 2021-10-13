@@ -147,7 +147,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-feed (~> 0.12)
+  jekyll-feed
   jekyll-gist
   jekyll-github-metadata
   jekyll-katex
