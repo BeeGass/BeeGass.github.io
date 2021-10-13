@@ -34,7 +34,6 @@ group :jekyll_plugins do
     gem 'jekyll-github-metadata'
     gem 'jekyll-katex'
 #   gem 'jekyll-spaceship'
-#   gem 'jekyll-github-metadata'
   end
 
 gem "kramdown-math-katex"

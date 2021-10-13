@@ -31,9 +31,18 @@ permalink: /:title:output_ext
 
 repository: BeeGass/BeeGass.github.io
 github_username: BeeGass
+github_repo: "BeeGass.github.io"
 author: Bryan Gass
 
-# jekyll-spaceship config #
+twitter_username: BeeAGass
+google_scholar_id: v0AEMeAAAAAJ
+
+google_analytics: G-QN42G1K3H4
+
+default_badges:
+  github: true
+  binder: true
+  colab: true
 
 plugins:
   - jekyll-sitemap
