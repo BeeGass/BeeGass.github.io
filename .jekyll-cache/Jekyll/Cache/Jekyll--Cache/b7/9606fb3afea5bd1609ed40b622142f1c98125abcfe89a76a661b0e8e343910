@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/BeeGass/BeeGass.github.io",
-  "build_revision": "34550d3bcbfd525e972d4df22adf5af82a8f9ac7",
+  "build_revision": "728908677b9a051fb6e1f966bf7ac4079f9fb9f5",
   "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
   "contributors": [
     {
@@ -24,7 +24,7 @@
       "received_events_url": "https://api.github.com/users/BeeGass/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 467
+      "contributions": 476
     }
   ],
   "disabled": false,
@@ -47,7 +47,7 @@
     "created_at": "2018-10-20 17:43:31 UTC",
     "description": null,
     "email": null,
-    "followers": 25,
+    "followers": 26,
     "following": 73,
     "has_organization_projects": null,
     "has_repository_projects": null,
@@ -62,7 +62,7 @@
     "public_gists": 3,
     "public_repos": 26,
     "type": "User",
-    "updated_at": "2021-10-13 09:16:11 UTC"
+    "updated_at": "2021-10-19 18:10:49 UTC"
   },
   "owner_gravatar_url": "https://github.com/BeeGass.png",
   "owner_name": "BeeGass",
@@ -344,14 +344,14 @@
       "releases_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/BeeGass/BeeGass.github.io/deployments",
       "created_at": "2021-04-23 22:31:38 UTC",
-      "updated_at": "2021-10-13 10:29:56 UTC",
-      "pushed_at": "2021-10-13 10:31:57 UTC",
+      "updated_at": "2021-10-20 20:38:30 UTC",
+      "pushed_at": "2021-10-20 20:40:34 UTC",
       "git_url": "git://github.com/BeeGass/BeeGass.github.io.git",
       "ssh_url": "git@github.com:BeeGass/BeeGass.github.io.git",
       "clone_url": "https://github.com/BeeGass/BeeGass.github.io.git",
       "svn_url": "https://github.com/BeeGass/BeeGass.github.io",
       "homepage": "https://beegass.github.io/",
-      "size": 59983,
+      "size": 64994,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Jupyter Notebook",
@@ -2741,4 +2741,4 @@
   },
   "wiki_url": "https://github.com/BeeGass/BeeGass.github.io/wiki",
   "zip_url": "https://github.com/BeeGass/BeeGass.github.io/zipball/gh-pages"
-}, "title"=>#<Jekyll::GitHubMetadata::Value:0x000056279aecd6d8 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x000056279aecd4f8 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET
+}, "title"=>#<Jekyll::GitHubMetadata::Value:0x00005616177732a0 @key="title", @value="BeeGass.github.io", @rendered="BeeGass.github.io">, "description"=>#<Jekyll::GitHubMetadata::Value:0x0000561617773138 @key="description", @value="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things", @rendered="This is my personal website where I have tried to improve my understanding of HTML, CSS and JavaScript. Here you can see a showcase of my projects and my resume among other things">}:ET

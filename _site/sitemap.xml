@@ -47,4 +47,8 @@
 <url>
 <loc>http://localhost:4000/tag/web-dev.html</loc>
 </url>
+<url>
+<loc>http://localhost:4000/resume.pdf</loc>
+<lastmod>2021-10-20T16:29:46-04:00</lastmod>
+</url>
 </urlset>
