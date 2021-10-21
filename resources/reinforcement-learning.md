@@ -1,3 +1,14 @@
+---
+layout: notes_template
+title: reinforcement-learning
+author: Bryan
+tags: notes
+custom_css: styles
+hasmath: "false"
+---
+
+
+
 # Reinforcement Learning:
 
 [TOC]

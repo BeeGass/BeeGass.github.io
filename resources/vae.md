@@ -1,3 +1,14 @@
+---
+layout: notes_template
+title: vae
+author: Bryan
+tags: notes
+custom_css: styles
+hasmath: "false"
+---
+
+
+
 # Variational Autoencoders (VAE)
 
 [TOC]

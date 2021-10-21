@@ -1,3 +1,14 @@
+---
+layout: notes_template
+title: resources-for-everything
+author: Bryan
+tags: notes
+custom_css: styles
+hasmath: "false"
+---
+
+
+
 # Resources For Everything
 
 [TOC]
@@ -84,73 +95,67 @@
 * [Data Science Topics](https://www.jeremyjordan.me/data-science/)
 * [A map of topics](https://app.learney.me/)
 
-### Reinforcement Learning:
+### Machine Learning & Deep Learning Sub-Topics:
 
-* [Key Papers in Deep RL](https://spinningup.openai.com/en/latest/spinningup/keypapers.html)
+#### Reinforcement Learning:
 
-### Generative Adversarial Networks (GAN):
+[Click here for: Reinforcement Learning:](/resources/reinforcement-learning.md)
 
-* 
+#### Generative Adversarial Networks (GAN):
 
-### Variational Autoencoders(VAE):
+[Click here for: GANs](/resources/gans.md)
 
-* 
+#### Variational Autoencoders(VAE):
 
-### Back-Propagation:
+[Click here for: VAEs](/resources/vae.md)
 
-* 
+#### Optimization:
 
-### Long Short-Term Memory (LSTM):
+[Click here for: Optimization](/resources/optimization.md)
 
-* 
+#### Long Short-Term Memory (LSTM):
 
-### Recurrent Neural Networks (RNN):
+[Click here for: LSTMs](/resources/lstm.md)
 
-* 
+#### Recurrent Neural Networks (RNN):
 
-### Transformers:
+[Click here for: RNNs](/resources/rnn.md)
 
-* 
+#### Transformers:
 
-### Softmax Regression:
+[Click here for: Transformers](/resources/transformers.md)
 
-* 
+#### Convolutional Neural Network (CNN):
 
-### Convolutional Neural Network (CNN):
+[Click here for: CNNs](/resources/cnn.md)
 
-* 
+#### Principal Component Analysis (PCA):
 
-### Principal Component Analysis (PCA):
+[Click here for: PCA](/resources/pca.md)
 
-* 
+#### K-Nearest-Neighbors (KNN):
 
-### K-Nearest-Neighbors (KNN):
+[Click here for: KNN](/resources/knn.md)
 
-* 
+#### Regression:
 
-### Regression:
+[Click here for: Regression](/resources/regression.md)
 
-* 
+#### Bagging/Boosting:
 
-### Baggin/Boosting:
+[Click here for: Bagging and/ or Boosting](/resources/bagging-boosting.md)
 
-* 
+#### Regularization:
 
-### Regularization:
+[Click here for: Regularization](/resources/regularization.md)
 
-* 
+#### Support Vector Machine (SVM):
 
-### Support Vector Machine (SVM):
+[Click here for: SVM](/resources/svm.md)
 
-* 
+#### t-distributed Stochastic Neighbor Embedding (t-SNE):
 
-### t-distributed Stochastic Neighbor Embedding (t-SNE):
-
-* 
-
-### Optimization:
-
-* 
+[Click here for: t-SNE](/resources/t-sne.md)
 
 
 
@@ -243,18 +248,18 @@
 
 ### Machine Learning:
 
-* [CS229: Machine Learning](http://cs229.stanford.edu/) - Havent used this but know its well respected
-* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) - Havent used this but know its well respected
+* [CS229: Machine Learning](http://cs229.stanford.edu/)
+* [CS 329S: Machine Learning Systems Design](https://stanford-cs329s.github.io/) 
 * [EECS 564: Estimation, Filtering, and Detection.](https://web.eecs.umich.edu/~cscott/past_courses/eecs564w11/index.html)
 
 ### Deep Learning:
 
 * [Stanford-CS228: Probabilistic Graphical Models](https://ermongroup.github.io/cs228/)
   * [Stanford-CS228's Notes](https://ermongroup.github.io/cs228-notes/)
-* [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/index.html) - Havent used this but know its well respected
-* [fastai](https://course.fast.ai/) - Havent used this but know its well respected
-* [fastai, part 2](https://course19.fast.ai/part2) - Havent used this but know its well respected
-* [Non-Euclidean Methods in Machine Learning](https://graphics.stanford.edu/courses/cs468-20-fall/index.html) - Havent used this but know its well respected
+* [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/index.html) 
+* [fastai](https://course.fast.ai/) 
+* [fastai, part 2](https://course19.fast.ai/part2) 
+* [Non-Euclidean Methods in Machine Learning](https://graphics.stanford.edu/courses/cs468-20-fall/index.html) 
 * [NYU's Deep Learning Course](https://atcold.github.io/pytorch-Deep-Learning/)
 * [Introduction To Deep Learning](https://sebastianraschka.com/blog/2021/dl-course.html)
 * [WPI's Deep Learning Course](https://video.wpi.edu/hapi/v1/ui/permalinks/Mb5g3C7K)
@@ -262,7 +267,7 @@
 
 ### Reinforcement Learning:
 
-* [CS234: Reinforcement Learning](http://web.stanford.edu/class/cs234/index.html) - Havent used this but know its well respected
+* [CS234: Reinforcement Learning](http://web.stanford.edu/class/cs234/index.html)
 * [UC Berkeley's Deep Reinforcement Learning Course](http://rail.eecs.berkeley.edu/deeprlcourse/)
 
 
@@ -339,7 +344,6 @@
 
 * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 * [Learning Git Branching](https://learngitbranching.js.org/)
-* 
 
 
 
@@ -390,7 +394,8 @@ Need to be filled in
 ## Probability
 
 * [Review of Probability Theory: Notes](http://cs229.stanford.edu/section/cs229-prob.pdf)
-* 
+
+  
 
 
 

@@ -1,0 +1,37 @@
+---
+title: Notes | Bryan Gass
+custom_css: styles
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+
+<body class="container-fluid flex-grow-1 fs-3 lh-sm m-0 p-0">
+    <div class="d-sm-flex flex-lg-row flex-sm-column justify-content-sm-center page-layout">
+        <div class="aside-1 d-sm-flex flex-column me-3 pe-5 ps-3 py-3">
+            <!--could not get the right padding exactly 2rem using bootstrap's css-->
+            <div class="the_toc">
+                {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=6 %}
+            </div>
+        </div>
+
+        <div class="flex-grow-1 lh-base px-3 py3" id="content">
+            <button class="theme-toggle"><i class="fas fa-adjust" id="icon"></i></button>
+            <div class="flex-sm-row">
+                <a class="back-button" href="/"><i class="fas fa-arrow-left"></i></a>
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    {% include k_tex.html %}
+</footer>
+</html>

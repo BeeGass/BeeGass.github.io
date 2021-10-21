@@ -1,3 +1,14 @@
+---
+layout: notes_template
+title: gan
+author: Bryan
+tags: notes
+custom_css: styles
+hasmath: "false"
+---
+
+
+
 # Generative Adversarial Networks (GAN)
 
 [TOC]
