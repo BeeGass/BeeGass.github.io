@@ -22,6 +22,8 @@ jobs:
         with:
           ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: bundle update
+      - run: gem install nokogiri --platform=ruby
         
       - name: install execjs
         run: gem install execjs
