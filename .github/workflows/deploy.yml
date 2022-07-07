@@ -22,7 +22,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.0" # Not needed with a .ruby-version file
-          bundler-cache: false # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
 
       - name: install nokogirl
@@ -31,14 +31,11 @@ jobs:
       - name: Install execjs
         run: gem install execjs
 
-      - name: Ensure Ruby Racer is updated
-        run: bundle update therubyracer
-
       - name: uninstall libv8
         run: gem uninstall libv8
 
-      - name: Bundle install
-        run: bundle install
+      - name: Ensure Ruby Racer is updated
+        run: bundle update therubyracer
 
       - name: Bundle check
         run: bundle check
