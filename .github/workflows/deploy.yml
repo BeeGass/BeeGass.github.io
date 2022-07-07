@@ -25,9 +25,6 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
 
-      - name: install nokogirl
-        run: gem install nokogiri --platform=ruby
-
       - name: Install execjs
         run: gem install execjs
 
@@ -36,6 +33,9 @@ jobs:
 
       - name: Ensure Ruby Racer is updated
         run: bundle update therubyracer
+
+      - name: install nokogirl
+        run: gem install nokogiri --platform=ruby
 
       - name: Bundle check
         run: bundle check
