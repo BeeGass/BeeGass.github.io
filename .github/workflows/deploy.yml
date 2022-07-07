@@ -18,11 +18,11 @@ jobs:
       - name: Install nodejs
         run: sudo apt-get install nodejs
         
+      - run: gem install nokogiri --platform=ruby
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - run: gem install nokogiri --platform=ruby
       - run: bundle check
         
       - name: install execjs
