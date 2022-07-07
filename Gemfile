@@ -20,7 +20,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #   end
 gem 'execjs'
 gem 'nokogiri'
-# gem 'therubyracer'
+gem 'therubyracer'
 gem 'kramdown-math-katex'
 
 group :jekyll_plugins do
