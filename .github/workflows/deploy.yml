@@ -16,14 +16,17 @@ jobs:
         run: sudo apt install build-essential
 
       - name: Install nodejs
-        run: sudo apt-get install nodejs
-
+        run: sudo apt-get install nodejs  
+      
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # Not needed with a .ruby-version file
+          ruby-version: "3.0" # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
+      
+      - name: Install Linux
+        run: bundle lock --add-platform x86_64-linux
 
       - name: install nokogirl
         run: gem install nokogiri --platform=ruby
