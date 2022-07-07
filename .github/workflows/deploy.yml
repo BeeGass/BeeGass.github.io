@@ -25,9 +25,6 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
 
-      - name: uninstall libv8
-        run: gem uninstall libv8
-
       - name: install nokogirl
         run: gem install nokogiri --platform=ruby
 
@@ -37,11 +34,14 @@ jobs:
       - name: Ensure Ruby Racer is updated
         run: bundle update therubyracer
 
-      - name: Install Linux
-        run: bundle lock --add-platform x86_64-linux
+      - name: uninstall libv8
+        run: gem uninstall libv8
 
       - name: Bundle check
         run: bundle check
+
+      - name: Install Linux
+        run: bundle lock --add-platform x86_64-linux
 
       - name: Convert Notebooks And Word Docs To Posts
         uses: fastai/fastpages@master
