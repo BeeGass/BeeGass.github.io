@@ -16,8 +16,8 @@ jobs:
         run: sudo apt install build-essential
 
       - name: Install nodejs
-        run: sudo apt-get install nodejs  
-      
+        run: sudo apt-get install nodejs
+
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -25,12 +25,15 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
 
+      - name: uninstall libv8
+        run: gem uninstall libv8
+
       - name: install nokogirl
         run: gem install nokogiri --platform=ruby
 
       - name: Install execjs
         run: gem install execjs
-        
+
       - name: Ensure Ruby Racer is updated
         run: bundle update therubyracer
 

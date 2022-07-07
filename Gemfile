@@ -19,6 +19,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # #   gem 'jekyll-spaceship'
 #   end
 gem 'execjs'
+gem 'nokogiri'
 gem 'therubyracer'
 gem 'kramdown-math-katex'
 
