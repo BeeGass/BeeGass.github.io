@@ -18,17 +18,22 @@ jobs:
       - name: Install nodejs
         run: sudo apt-get install nodejs
         
-      - run: gem install nokogiri --platform=ruby
+      - name: Install Ruby
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - run: bundle check
+      
+      - name: install nokogirl
+        run: gem install nokogiri --platform=ruby
         
-      - name: install execjs
+      - name: Install execjs
         run: gem install execjs
+        
+      - name: Bundle check
+        run: bundle check
 
-      - name: convert notebooks and word docs to posts
+      - name: Convert Notebooks And Word Docs To Posts
         uses: fastai/fastpages@master
         with:
           BOOL_SAVE_MARKDOWN: false
