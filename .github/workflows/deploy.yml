@@ -24,15 +24,18 @@ jobs:
           ruby-version: "3.0" # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1
-      
-      - name: Install Linux
-        run: bundle lock --add-platform x86_64-linux
 
       - name: install nokogirl
         run: gem install nokogiri --platform=ruby
 
       - name: Install execjs
         run: gem install execjs
+        
+      - name: Ensure Ruby Racer is updated
+        run: bundle update therubyracer
+
+      - name: Install Linux
+        run: bundle lock --add-platform x86_64-linux
 
       - name: Bundle check
         run: bundle check
