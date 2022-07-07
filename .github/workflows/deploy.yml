@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         
       - name: Install build essentials aka gcc
         run: sudo apt install build-essential
@@ -20,7 +20,7 @@ jobs:
         
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.0 # Not needed with a .ruby-version file
+          ruby-version: '3.0' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
         
       - name: install execjs
