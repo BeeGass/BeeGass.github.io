@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install build essentials aka gcc
-        run: sudo apt install build-essential
+        run: apt-get install build-essential dh-autoreconf
 
       - name: install zlib
         run: sudo apt-get install libz-dev
